@@ -1,6 +1,15 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@font-face {
+    font-family: "header-font";
+    src: url("/public/courgette.woff");
+}
+
+h1, h2, p, h3 {
+    font-family: header-font;
+}
 html {
     font-size: 62.5%;
 }
