@@ -15,6 +15,7 @@ module.exports = {
     },
     backgroundImage: {
       'hero-pattern': "url('/public/image.jpeg')",
+      'city-pattern': "url('/public/scv.jpg')",
     },
     fontFamily: {
       'header-font': ['courgette', 'serif']
