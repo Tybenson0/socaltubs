@@ -6,13 +6,39 @@ function NavBar() {
 
     function toggleMenu() {
         setMenuOpen(!menuOpen);
-      }
+    }
     function handleClick() {
         setMenuOpen(false);
     }
+
+    
+    const DropServices = () => {
+        const [dropOpen, setDropOpen] = useState(0);
+        
+        function menuToggle() {
+            setDropOpen(!dropOpen);
+        }
+        return (
+            <li className='w-full text-center pb-6 md:pb-10'>
+                        <button className='' onClick={menuToggle}>services</button>
+                        <ul className={`border border-primary w-full hidden flex-col justify-center gap-[1rem] mt-[1rem] pt-[.5rem] pb-[.5rem]  ${dropOpen ? 'open' : ''}`}>
+                            <li >
+                                <Link onClick={handleClick} to="/services1">Porcelain</Link>
+                            </li>
+                            <li>
+                             <Link onClick={handleClick} to="/services2">Glass</Link>
+                            </li>
+                            <li>
+                                <Link onClick={handleClick} to="/services3">Vanity</Link>
+                            </li>
+                        </ul>
+            </li >
+        );
+    };
+
     return (
         <nav className='w-full overflow-hidden fixed lg:relative z-[9999]'>
-            <div class="nav-header flex h-28 lg:h-24 w-full bg-primary border-b border-secondary lg:border-b-[2px]">
+            <div class="nav-header flex h-28 lg:h-24 w-full bg-primary border-b border-thirdarylol lg:border-b-[1px]">
                 <div className='w-full lg:w-[35%] h-full flex lg:ml-[2rem]'>
                     <Link className='justify-self-start ml-[.5rem]' onClick={handleClick} to="/"><img className='h-full' src='image0.webp' alt="fix later"></img></Link>
                     <h1 className='self-center text-center lg:text-start lg:pl-[2rem] flex-1 text-3xl md:text-3xl tracking-widest'>SoCalTubSpecialist</h1>
@@ -49,9 +75,7 @@ function NavBar() {
                     <li className=' w-full text-center pb-6 md:pb-10'>
                         <Link onClick={handleClick} to="/About">About</Link>
                     </li>
-                    <li className='w-full text-center pb-6 md:pb-10'>
-                        <Link  onClick={handleClick} to="/Services">Services</Link>
-                    </li >
+                    <DropServices />
                     <li className='w-full text-center pb-6 md:pb-10'>
                         <Link onClick={handleClick} to="/Gallery">Gallery</Link>
                     </li >

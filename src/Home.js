@@ -4,7 +4,7 @@ function Home() {
     return (
         <>
         <div className="relative w-full h-[88vh] lg:h-[110vh] bg-fixed bg-thirdarylol  bg-center bg-hero-pattern bg-cover flex justify-center lg:justify-end items-center -z-10">
-            <div className="w-[70%] lg:w-[36%] h-[70%] max-h-[400px] lg:max-h-fit lg:mr-[5%] border-2 border-secondary mt-[10rem] relative">
+            <div className="w-[70%] lg:w-[36%] h-[70%] max-h-[400px] lg:max-h-fit lg:mr-[5%] border-2 border-thirdarylol mt-[10rem] relative">
                 <div className="w-full h-full relative">
                     <div className="w-full h-full bg-primary opacity-80 absolute "></div>
                     <div className="w-full h-full relative flex justify-center items-center flex-col p-6 gap-6">
@@ -92,7 +92,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="h-[20vh] lg:h-[30vh] w-[65%] flex flex-row justify-center">
+            <div className="h-[20vh] lg:h-[30vh] w-[65%] flex flex-row justify-center mt-[2rem]">
                 <div className="w-[95%] h-full flex flex-row md:w-[50%]">
                 <div className="flex-[85%]  w-full h-full">
                     <div className="h-[33%]  w-full flex flex-row items-center">

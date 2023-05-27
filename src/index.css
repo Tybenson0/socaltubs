@@ -7,7 +7,7 @@
     src: url("/public/courgette.woff");
 }
 
-h1, h2, h3, li {
+h1, h2, h3, {
     font-family: header-font;
 }
 html {
@@ -29,3 +29,4 @@ html, body {
 .open {
     display: flex;
 }
+
