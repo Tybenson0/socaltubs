@@ -18,8 +18,9 @@ module.exports = {
       'city-pattern': "url('/public/scv.jpg')",
       'porcelain-pattern': "url('/public/scv.jpg')",
     },
-    fontFamily: {
-      'header-font': ['courgette', 'serif']
+    gridTemplateRows: {
+      '7': 'repeat(7, minmax(0, 1fr))',
+      '8': 'repeat(6, minmax(0, auto))',
     },
   },
   plugins: [],

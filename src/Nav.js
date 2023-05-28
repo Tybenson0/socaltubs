@@ -37,7 +37,7 @@ function NavBar() {
     };
 
     return (
-        <nav className='w-full overflow-hidden fixed lg:relative z-[9999]'>
+        <nav className='w-full overflow-hidden fixed lg:relative z-[9998]'>
             <div class="nav-header flex h-28 lg:h-24 w-full bg-primary border-b border-thirdarylol lg:border-b-[1px]">
                 <div className='w-full lg:w-[35%] h-full flex lg:ml-[2rem]'>
                     <Link className='justify-self-start ml-[.5rem]' onClick={handleClick} to="/"><img className='h-full' src='image0.webp' alt="fix later"></img></Link>

@@ -221,7 +221,7 @@ export const Vanity = () => {
                     </div>
                     <div className="h-[34%]  w-full flex flex-row items-center">
                         <img className='h-[2.5rem] w-[2.5rem] flex-[15%] ml-[2rem]' src='location.svg' alt="fix later"></img>
-                        <a href="https://www.google.com/maps/place/Valencia, Santa Clarita, CA, USA" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.google.com/maps/place/Santa Clarita, CA, USA" target="_blank" rel="noopener noreferrer">
                         <h3 className="flex-[85%] text-[1.4rem] ml-[1rem] underline underline-offset-[3px]">Santa Clarita, California, 91355</h3>
                         </a>
                     </div>

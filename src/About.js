@@ -49,7 +49,7 @@ function About() {
                 <h1 className=" text-4xl leading-[3.2rem] w-[85%] text-center">
                     SoCal Tub Specialist: The Pinnacle of Bathing Luxury in Santa Clarita and Beyond!
                 </h1>
-                <h2 className='opacity-[70%] w-[45%] text-center mt-[.5rem]'>Top Rated vanity and tub service in Santa Clarita Valley</h2>
+                <h2 className='opacity-[70%] w-[50%] text-center mt-[.5rem] text-[1.2rem]'>Top Rated vanity and tub service in Santa Clarita Valley</h2>
                 <span className="border-2 border-primary w-[50%] mb-[2.5rem] mt-[2rem]"></span>
                 <img src='kitchen-2.jpeg' alt='fix later' className="w-[75%] h-[36rem]"></img>
             </div>

@@ -6,8 +6,7 @@
     font-family: "header-font";
     src: url("/public/courgette.woff");
 }
-
-h1, h2, h3, {
+h1, h2, h3 {
     font-family: header-font;
 }
 html {
@@ -30,3 +29,28 @@ html, body {
     display: flex;
 }
 
+.grid-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .full-screen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .full-screen-image {
+    max-height: 40vh;
+    max-width: 95%;
+     /* Adjust the value as needed */
+  }
