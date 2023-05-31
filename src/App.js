@@ -3,8 +3,8 @@ import Home from './Home';
 import About from './About';
 import { Porcelain, Glass, Vanity } from './Services';
 import Gallery from './Gallery';
-import LocationsServiced from './LocationsServiced';
-import Quote from './Quote';
+import {SantaClarita, AntelopeValley, Surrounding} from './LocationsServiced';
+import Contact from './Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -19,8 +19,10 @@ function App() {
             <Route path="/services2" element={<Glass />} />
             <Route path="/services3" element={<Vanity />} />
             <Route path="/Gallery" element={<Gallery />} />
-            <Route path="/LocationsServiced" element={<LocationsServiced />} />
-            <Route path="/Quote" element={<Quote />} />
+            <Route path="/SantaClarita" element={<SantaClarita />} />
+            <Route path="/AntelopeValley" element={<AntelopeValley />} />
+            <Route path="/Surrounding" element={<Surrounding />} />
+            <Route path="/Contact" element={<Contact />} />
         </Routes>
       </Router>
     </section >

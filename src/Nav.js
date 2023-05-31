@@ -15,9 +15,12 @@ function NavBar() {
     const DropServices = () => {
         const [dropOpen, setDropOpen] = useState(0);
         
+        
         function menuToggle() {
             setDropOpen(!dropOpen);
         }
+
+        
         return (
             <li className='w-full text-center pb-6 md:pb-10'>
                         <button className='' onClick={menuToggle}>services</button>
@@ -30,6 +33,29 @@ function NavBar() {
                             </li>
                             <li>
                                 <Link onClick={handleClick} to="/services3">Vanity</Link>
+                            </li>
+                        </ul>
+            </li >
+        );
+    };
+    const DropLocations = () => {
+        const [dropOpen, setDropOpen] = useState(0);
+        
+        function menuToggle() {
+            setDropOpen(!dropOpen);
+        }
+        return (
+            <li className='w-full text-center pb-6 md:pb-10'>
+                        <button className='' onClick={menuToggle}>Locations</button>
+                        <ul className={`border border-primary w-full hidden flex-col justify-center gap-[1rem] mt-[1rem] pt-[.5rem] pb-[.5rem]  ${dropOpen ? 'open' : ''}`}>
+                            <li >
+                                <Link onClick={handleClick} to="/SantaClarita">Santa Clarita</Link>
+                            </li>
+                            <li>
+                             <Link onClick={handleClick} to="/AntelopeValley">Antelope Valley</Link>
+                            </li>
+                            <li>
+                                <Link onClick={handleClick} to="/Surrounding">Surrounding Areas</Link>
                             </li>
                         </ul>
             </li >
@@ -61,7 +87,7 @@ function NavBar() {
                             <Link onClick={handleClick} to="/LocationsServiced">Locations</Link>
                         </li>
                         <li className=' w-full text-center text-2xl'>
-                            <Link onClick={handleClick} to="/Quote">Contact</Link>
+                            <Link onClick={handleClick} to="/Contact">Contact</Link>
                         </li>
                     </ul>
                     <button onClick={toggleMenu}> <img className='h-[4.5rem] lg:hidden' src='burger-simple-svgrepo-com.svg' alt='fix later'></img></button>
@@ -79,11 +105,9 @@ function NavBar() {
                     <li className='w-full text-center pb-6 md:pb-10'>
                         <Link onClick={handleClick} to="/Gallery">Gallery</Link>
                     </li >
-                    <li className='w-full text-center pb-6 md:pb-10'>
-                        <Link onClick={handleClick} to="/LocationsServiced">Locations Serviced</Link>
-                    </li>
+                    <DropLocations />
                     <li className=' w-full text-center pb-6 md:pb-10'>
-                        <Link onClick={handleClick} to="/Quote">Contact</Link>
+                        <Link onClick={handleClick} to="/Contact">Contact</Link>
                     </li>
                 </ul>
             </div>
