@@ -4,34 +4,53 @@ import { Link } from 'react-router-dom';
 function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    function toggleMenu() {
-        setMenuOpen(!menuOpen);
-    }
     function handleClick() {
         setMenuOpen(false);
     }
 
+    const ToggleIcon = () => {
+        function toggleMenu() {
+            
+            setMenuOpen(!menuOpen);
+        }
+        return (
+            <svg
+            className={`hb ${menuOpen ? 'animate-open' : 'animate-close'} border-[3px] border-secondary w-[5rem] h-[5rem]`}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 10 10"
+            stroke="#eee"
+            strokeWidth=".6"
+            fill="rgba(0,0,0,0)"
+            strokeLinecap="round"
+            style={{ cursor: 'pointer' }}
+            onClick={toggleMenu}
+          >
+            <path className="path-open" />
+            <path className="path-close" />
+          </svg>
+        );
+      };
     
     const DropServices = () => {
         const [dropOpen, setDropOpen] = useState(0);
         
         
-        function menuToggle() {
+        function serviceToggle() {
             setDropOpen(!dropOpen);
         }
 
         
         return (
-            <li className='w-full text-center pb-6 md:pb-10'>
-                        <button className='' onClick={menuToggle}>services</button>
-                        <ul className={`border border-primary w-full hidden flex-col justify-center gap-[1rem] mt-[1rem] pt-[.5rem] pb-[.5rem]  ${dropOpen ? 'open' : ''}`}>
-                            <li >
+            <li className='w-full text-center pb-6 md:pb-10 ml-[.5rem]'>
+                        <button className='flex flex-row  justify-center w-full' onClick={serviceToggle}>Services <div className={`plusminus mt-[1.25rem] ml-[.5rem] justify-self-center ${dropOpen ? 'active' : ''}`}></div></button>
+                        <ul className={` w-full  flex-col justify-center gap-[2.25rem] mt-[1rem]  ${dropOpen ? 'dropNav' : 'closeNav'}`}>
+                            <li className='text-[2.2rem]'>
                                 <Link onClick={handleClick} to="/services1">Porcelain</Link>
                             </li>
-                            <li>
+                            <li className='text-[2.2rem]'>
                              <Link onClick={handleClick} to="/services2">Glass</Link>
                             </li>
-                            <li>
+                            <li className='text-[2.2rem]'>
                                 <Link onClick={handleClick} to="/services3">Vanity</Link>
                             </li>
                         </ul>
@@ -41,20 +60,20 @@ function NavBar() {
     const DropLocations = () => {
         const [dropOpen, setDropOpen] = useState(0);
         
-        function menuToggle() {
+        function locationToggle() {
             setDropOpen(!dropOpen);
         }
         return (
-            <li className='w-full text-center pb-6 md:pb-10'>
-                        <button className='' onClick={menuToggle}>Locations</button>
-                        <ul className={`border border-primary w-full hidden flex-col justify-center gap-[1rem] mt-[1rem] pt-[.5rem] pb-[.5rem]  ${dropOpen ? 'open' : ''}`}>
-                            <li >
+            <li className='w-full text-center pb-6 md:pb-10 ml-[.5rem]'>
+                        <button className='flex flex-row  justify-center w-full' onClick={locationToggle}>Locations<div className={`plusminus mt-[1.25rem] ml-[.5rem] justify-self-center ${dropOpen ? 'active' : ''}`}></div></button>
+                        <ul className={`w-full hidden flex-col justify-center gap-[2.25rem] mt-[1.25rem]  ${dropOpen ? 'dropNav' : 'closeNav'}`}>
+                            <li className='text-[2.2rem]'>
                                 <Link onClick={handleClick} to="/SantaClarita">Santa Clarita</Link>
                             </li>
-                            <li>
+                            <li className='text-[2.2rem]'>
                              <Link onClick={handleClick} to="/AntelopeValley">Antelope Valley</Link>
                             </li>
-                            <li>
+                            <li className='text-[2.2rem]'>
                                 <Link onClick={handleClick} to="/Surrounding">Surrounding Areas</Link>
                             </li>
                         </ul>
@@ -90,12 +109,12 @@ function NavBar() {
                             <Link onClick={handleClick} to="/Contact">Contact</Link>
                         </li>
                     </ul>
-                    <button onClick={toggleMenu}> <img className='h-[4.5rem] lg:hidden' src='burger-simple-svgrepo-com.svg' alt='fix later'></img></button>
+                   <ToggleIcon/>
                 </div>
             </div>
-            <div  className={`h-[85vh] relative  bg-thirdarylol w-full nav-collapse flex justify-center border-b-2 border-b-primary ${menuOpen ? 'open' : ''}`}> 
+            <div  className={`h-[85vh] lg:hidden relative  bg-thirdarylol w-full nav-collapse flex justify-center border-b-2 border-b-primary ${menuOpen ? 'open' : 'close'}`}> 
                 <ul className='list-none w-full flex flex-col items-center justify-center text-5xl font-header-font'>
-                    <li className='w-full text-center pb-6 md:pb-10 underline'>
+                    <li className='w-full text-center pb-6 md:pb-10 '>
                          <Link onClick={handleClick} to="/">Home</Link>
                     </li>
                     <li className=' w-full text-center pb-6 md:pb-10'>
