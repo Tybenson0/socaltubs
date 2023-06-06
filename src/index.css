@@ -14,11 +14,20 @@
     font-family: "Poppins-M";
     src: url("/public/Poppins-Medium.woff");
 }
+@font-face {
+    font-family: "Poppins-semi";
+    src: url("/public/Poppins-SemiBold.woff");
+}
 h1 {
     font-family: header-font;
 }
 h3, h2 {
     font-family: Poppins-M;
+}
+@media (min-width:1024px) {
+    h2, h3 {
+        font-family: poppins-semi;
+    }
 }
 p {
     font-family: Poppins;
@@ -43,9 +52,9 @@ html, body {
     animation: navOpen .1s ease-in-out;
 }
 .close {
-    overflow: hidden;
     right: 100%;
     animation: navClose .1s ease-in-out;
+    height: 0;
 }
 .dropNav {
     display: flex;
@@ -145,19 +154,23 @@ html, body {
   }
   @keyframes navClose {
     0% {
+        height: 85vh;
         right: 0%;
-        
     }
     25% {
+        height: 85vh;
         right: 25%;
     }
     50% {
+        height: 85vh;
         right: 50%;
     }
     75% {
+        height: 85vh;
         right: 75%;
     }
     100% {
+        height: 0;
         right: 100%;
     }
   }

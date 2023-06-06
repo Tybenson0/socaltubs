@@ -59,7 +59,7 @@ export const Glass = () => {
     return <div className="w-full h-fit bg-thirdarylol flex flex-col items-center">
     <div className="w-full h-fit  pt-[10rem] flex flex-col items-center">
         <h1 className=" text-5xl leading-[3.2rem] w-[75%] text-center">
-            Porcelain services
+            Glass services
         </h1>
         <h2 className='opacity-[70%] w-[45%] text-center text-[1.2rem] mt-[.5rem]'>California top of the line full porcelain services</h2>
         <span className="border-2 border-primary w-[50%] mb-[2.5rem] mt-[2rem]"></span>
@@ -86,7 +86,7 @@ export const Glass = () => {
                 <div className="w-[90%] h-full z-50 relative flex flex-row items-center justify-center pl-[1rem] pr-[1rem] ">
                     <span className="h-[95%] w-[.5rem] bg-secondary border border-secondary rounded-full"></span>
                     <div className="flex flex-col justify-center items-start h-[90%]  p-[.5rem] border-t-[2px] border-secondary">
-                        <h3 className="text-left text-4xl ml-[1rem] h-[20%] flex items-end">Porcelain Remodeling Services</h3>
+                        <h3 className="text-left text-4xl ml-[1rem] h-[20%] flex items-end">Glass Remodeling Services</h3>
                         <p className="text-left text-[1.4rem] ml-[1rem] mt-[.5rem]">
                         SoCalTubSpecialist offers expert porcelain services, restoring and refinishing worn-out fixtures to their 
                         original beauty with exceptional craftsmanship.</p>

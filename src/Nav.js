@@ -15,7 +15,7 @@ function NavBar() {
         }
         return (
             <svg
-            className={`hb ${menuOpen ? 'animate-open' : 'animate-close'} border-[3px] border-secondary w-[5rem] h-[5rem]`}
+            className={`hb lg:hidden ${menuOpen ? 'animate-open' : 'animate-close'} border-[3px] border-secondary w-[5rem] h-[5rem]`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 10 10"
             stroke="#eee"
@@ -81,8 +81,41 @@ function NavBar() {
         );
     };
 
+    const ServicesDesktop = () => {
+        const [isHovered, setIsHovered] = useState(false);
+
+        const handleMouseEnter = () => {
+            setIsHovered(true);
+        };
+
+        const handleMouseLeave = () => {
+            setIsHovered(false);
+        };
+        function handleClick() {
+            setIsHovered(false);
+        }
+
+        
+        return (
+            <li className='w-full h-[100%]   flex flex-col relative  ml-[.5rem]'
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
+                <div className='w-full h-full relative'>
+                        <p className='text-2xl flex-[100%] h-full flex items-center justify-center w-full'>Services</p>
+                        {isHovered && (
+                        <div className="w-full h-fit pb-[2rem] bg-thirdarylol border-l-[1px] border-b-[1px] border-r-[1px] border-primary absolute z-[9999]">
+                            <Link onClick={handleClick} className='w-full h-[33%] ' to="/services1"><p className=' mt-[1rem] text-[1.4rem] text-center'>Porcelain</p></Link>
+                            <Link onClick={handleClick} className='w-full h-[33%] ' to="/services2"><p className=' mt-[1rem] text-[1.4rem] text-center'>Glass</p></Link>
+                            <Link onClick={handleClick} className='w-full h-[33%] ' to="/services3"><p className=' mt-[1rem] text-[1.4rem] text-center'>Vanity</p></Link>
+                        </div>
+                        )}
+                </div>
+            </li >
+        );
+    };
+
     return (
-        <nav className='w-full overflow-hidden fixed lg:relative z-[9998]'>
+        <nav className='w-full overflow-hidden lg:overflow-visible fixed lg:relative z-[9998]'>
             <div class="nav-header flex h-28 lg:h-24 w-full bg-primary border-b border-thirdarylol lg:border-b-[1px]">
                 <div className='w-full lg:w-[35%] h-full flex lg:ml-[2rem]'>
                     <Link className='justify-self-start ml-[.5rem]' onClick={handleClick} to="/"><img className='h-full' src='image0.webp' alt="fix later"></img></Link>
@@ -96,9 +129,7 @@ function NavBar() {
                         <li className=' w-full text-center text-2xl'>
                             <Link onClick={handleClick} to="/About">About</Link>
                         </li>
-                        <li className='w-full text-center text-2xl'>
-                            <Link  onClick={handleClick} to="/Services">Services</Link>
-                        </li >
+                        <ServicesDesktop />
                         <li className='w-full text-center text-2xl'>
                             <Link onClick={handleClick} to="/Gallery">Gallery</Link>
                         </li >
