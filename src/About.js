@@ -25,17 +25,17 @@ function About() {
                 
                 <div className='w-full h-full absolute bg-primary opacity-65 z-10'></div>
             <div className="card w-full h-[85%] flex flex-col items-center justify-center gap-[.5rem] flex-[88%] relative z-20 pt-[1rem]">
-                <div className='p-[1rem] border-[3px] border-thirdarylol rounded-full'>
-                <img className='h-[4rem] md:h-[5rem]  w-[4rem] md:w-[5rem]' src='bathrub.svg' alt='fix later'></img>
+                <div className='p-[1rem] border-[3px] border-thirdarylol rounded-full lg:border-[2px]'>
+                <img className='h-[4rem] md:h-[5rem]  w-[4rem] md:w-[5rem] lg:w-[3rem] lg:h-[3rem]' src='bathrub.svg' alt='fix later'></img>
                 </div>
                 <h2 className='text-3xl md:text-4xl'>{cards[currentCardIndex].title}</h2>
                 <p className='text-center text-2xl md:text-[2rem] lg:text-[1.3rem] md:leading-[3rem] w-[90%]'>{cards[currentCardIndex].content}</p>
             </div>
             <div className='flex flex-row items-center justify-center w-full h-full flex-[12%] gap-[2.5rem] relative z-20 pt-[1rem]'>
-            <button onClick={previousCard} className='border-[3px] border-thirdarylol p-[.5rem] rounded-full'>
+            <button onClick={previousCard} className='border-[3px] lg:border-[2px] border-thirdarylol p-[.5rem] rounded-full'>
                     <img className='w-[1.5rem] md:w-[2rem]' src='left.svg' alt='fix later'></img>
                 </button>
-            <button onClick={nextCard} className='border-[3px] border-thirdarylol p-[.5rem] rounded-full'>
+            <button onClick={nextCard} className='border-[3px] lg:border-[2px] border-thirdarylol p-[.5rem] rounded-full'>
                     <img className='w-[1.5rem] md:w-[2rem]' src='right.svg' alt='fix later'></img>
                 </button>
             </div>

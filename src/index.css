@@ -26,7 +26,7 @@ h3, h2 {
 }
 @media (min-width:1024px) {
     h2, h3 {
-        font-family: poppins-semi;
+        font-family: poppins;
     }
 }
 p {

@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const desktopServices = [
+        'Porcelain',
+        'Glass',
+        'Vanity',
+    ];
+   const desktopLocations = [
+    'Santa Clarita',
+    'Antelope Valley',
+    'Surrounding Areas',
+   ];
 
     function handleClick() {
         setMenuOpen(false);
@@ -80,9 +90,10 @@ function NavBar() {
             </li >
         );
     };
-
-    const ServicesDesktop = () => {
+    
+    const ServicesDesktop = (props) => {
         const [isHovered, setIsHovered] = useState(false);
+        const {titles} = props;
 
         const handleMouseEnter = () => {
             setIsHovered(true);
@@ -103,10 +114,10 @@ function NavBar() {
                 <div className='w-full h-full relative'>
                         <p className='text-2xl flex-[100%] h-full flex items-center justify-center w-full'>Services</p>
                         {isHovered && (
-                        <div className="w-full h-fit pb-[2rem] bg-thirdarylol border-l-[1px] border-b-[1px] border-r-[1px] border-primary absolute z-[9999]">
-                            <Link onClick={handleClick} className='w-full h-[33%] ' to="/services1"><p className=' mt-[1rem] text-[1.4rem] text-center'>Porcelain</p></Link>
-                            <Link onClick={handleClick} className='w-full h-[33%] ' to="/services2"><p className=' mt-[1rem] text-[1.4rem] text-center'>Glass</p></Link>
-                            <Link onClick={handleClick} className='w-full h-[33%] ' to="/services3"><p className=' mt-[1rem] text-[1.4rem] text-center'>Vanity</p></Link>
+                        <div className="w-fit pb-[1rem] pr-[1rem] pl-[1rem] h-fit  bg-thirdarylol border-l-[2px] border-b-[2px] border-r-[2px] border-primary absolute z-[9999] whitespace-nowrap">
+                            <Link onClick={handleClick} className='w-full h-[33%] ' to="/services1"><p className=' mt-[1rem] text-[1.4rem] text-center' key={0}>{titles[0]}</p></Link>
+                            <Link onClick={handleClick} className='w-full h-[33%] ' to="/services2"><p className=' mt-[1rem] text-[1.4rem] text-center' key={1}>{titles[1]}</p></Link>
+                            <Link onClick={handleClick} className='w-full h-[33%] ' to="/services3"><p className=' mt-[1rem] text-[1.4rem] text-center'key={2}>{titles[2]}</p></Link>
                         </div>
                         )}
                 </div>
@@ -129,13 +140,11 @@ function NavBar() {
                         <li className=' w-full text-center text-2xl'>
                             <Link onClick={handleClick} to="/About">About</Link>
                         </li>
-                        <ServicesDesktop />
+                        <ServicesDesktop titles={desktopServices}/>
                         <li className='w-full text-center text-2xl'>
                             <Link onClick={handleClick} to="/Gallery">Gallery</Link>
                         </li >
-                        <li className='w-full text-center text-2xl'>
-                            <Link onClick={handleClick} to="/LocationsServiced">Locations</Link>
-                        </li>
+                        <ServicesDesktop titles={desktopLocations}/>
                         <li className=' w-full text-center text-2xl'>
                             <Link onClick={handleClick} to="/Contact">Contact</Link>
                         </li>

@@ -21,7 +21,7 @@ function Home() {
         </div>
         <div className=" w-full h-fit flex flex-col items-center">
             <div className="w-[25rem] md:w-[28rem] lg:w-[22rem] h-[5rem] lg:h-[4rem] border-[2px] border-secondary mt-[-1rem] lg:mt-[-2rem] bg-primary flex justify-center items-center relative z-[11] shadow-md">
-                <h3 className="text-3xl md:text-[2rem]">Get a Free Estimate</h3>
+                <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem]">Get a Free Estimate</h3>
             </div>
             <div className=" w-[90%]  h-full flex flex-col items-center pt-[2rem]">
                 <h2 className="text-4xl md:text-[2.4rem] text-center w-[90%]  text-black">The Best Tub Specialist in Town</h2>
@@ -73,7 +73,7 @@ function Home() {
                 </div>
             </div>
             <div className="w-full h-[80vh] lg:h-[100vh] bg-cover bg-scroll bg-city-pattern mt-[5rem] flex flex-col lg:flex-row lg: items-center justify-center lg:items-start lg:border-b-secondary lg:border-t-secondary lg:border-2 mb-[5rem] shadow-xl">
-                <h1 className="flex-[60%] text-center text-thirdarylol text-5xl mt-[4rem] hidden lg:block">Where We Operate</h1>
+                <h2 className="flex-[60%] text-center text-thirdarylol text-5xl mt-[4rem] hidden lg:block">Where We Operate</h2>
                 <div className="w-[90%] md:w-[75%] lg:w-full lg:flex-[40%] h-[80%] md:h-[85%] lg:h-full border-2 border-secondary lg:border-none lg:border-l-2 relative"> 
                     <div className="w-full h-full bg-primary absolute opacity-80 z-[1]"></div>
                     <div className="w-full h-full z-50 relative flex flex-col items-center justify-center p-[1rem]">
