@@ -13,16 +13,31 @@ function NavBar() {
     'Antelope Valley',
     'Surrounding Areas',
    ];
+   const sectionTitle = [
+        'Services',
+        'Locations',
+   ];
+   const locationLinks = [
+    'SantaClarita',
+    'AntelopeValley',
+    'Surrounding',
+   ]
+   const servicesLinks = [
+    'services1',
+    'services2',
+    'services3',
+   ];
+
 
     function handleClick() {
         setMenuOpen(false);
     }
 
+    function toggleMenu() {
+        
+        setMenuOpen(!menuOpen);
+    }
     const ToggleIcon = () => {
-        function toggleMenu() {
-            
-            setMenuOpen(!menuOpen);
-        }
         return (
             <svg
             className={`hb lg:hidden ${menuOpen ? 'animate-open' : 'animate-close'} border-[3px] border-secondary w-[5rem] h-[5rem]`}
@@ -51,16 +66,16 @@ function NavBar() {
 
         
         return (
-            <li className='w-full text-center pb-6 md:pb-10 ml-[.5rem]'>
-                        <button className='flex flex-row  justify-center w-full' onClick={serviceToggle}>Services <div className={`plusminus mt-[1.25rem] ml-[.5rem] justify-self-center ${dropOpen ? 'active' : ''}`}></div></button>
-                        <ul className={` w-full  flex-col justify-center gap-[2.25rem] mt-[1rem]  ${dropOpen ? 'dropNav' : 'closeNav'}`}>
-                            <li className='text-[2.2rem]'>
+            <li className='w-full text-center pb-10 md:pb-10 ml-[.5rem]'>
+                        <button className='flex flex-row  justify-center w-full small text-[2.6rem] small' onClick={serviceToggle}>Services <div className={`plusminus mt-[.75rem] ml-[.5rem] justify-self-center ${dropOpen ? 'active' : ''}`}></div></button>
+                        <ul className={` w-full  flex-col justify-center gap-[1.5rem] mt-[.5rem]  ${dropOpen ? 'dropNav' : 'closeNav'}`}>
+                            <li className='text-[1.8rem] small'>
                                 <Link onClick={handleClick} to="/services1">Porcelain</Link>
                             </li>
-                            <li className='text-[2.2rem]'>
+                            <li className='text-[1.8rem] small'>
                              <Link onClick={handleClick} to="/services2">Glass</Link>
                             </li>
-                            <li className='text-[2.2rem]'>
+                            <li className='text-[1.8rem] small'>
                                 <Link onClick={handleClick} to="/services3">Vanity</Link>
                             </li>
                         </ul>
@@ -74,16 +89,16 @@ function NavBar() {
             setDropOpen(!dropOpen);
         }
         return (
-            <li className='w-full text-center pb-6 md:pb-10 ml-[.5rem]'>
-                        <button className='flex flex-row  justify-center w-full' onClick={locationToggle}>Locations<div className={`plusminus mt-[1.25rem] ml-[.5rem] justify-self-center ${dropOpen ? 'active' : ''}`}></div></button>
+            <li className='w-full text-center pb-10 md:pb-10 ml-[.5rem]'>
+                        <button className='flex flex-row  justify-center w-full text-[2.6rem] small' onClick={locationToggle}>Locations<div className={`plusminus mt-[.75rem] ml-[.5rem] justify-self-center ${dropOpen ? 'active' : ''}`}></div></button>
                         <ul className={`w-full hidden flex-col justify-center gap-[2.25rem] mt-[1.25rem]  ${dropOpen ? 'dropNav' : 'closeNav'}`}>
-                            <li className='text-[2.2rem]'>
+                            <li className='text-[1.8rem] small'>
                                 <Link onClick={handleClick} to="/SantaClarita">Santa Clarita</Link>
                             </li>
-                            <li className='text-[2.2rem]'>
+                            <li className='text-[1.8rem] small'>
                              <Link onClick={handleClick} to="/AntelopeValley">Antelope Valley</Link>
                             </li>
-                            <li className='text-[2.2rem]'>
+                            <li className='text-[1.8rem] small'>
                                 <Link onClick={handleClick} to="/Surrounding">Surrounding Areas</Link>
                             </li>
                         </ul>
@@ -94,6 +109,8 @@ function NavBar() {
     const ServicesDesktop = (props) => {
         const [isHovered, setIsHovered] = useState(false);
         const {titles} = props;
+        const {section} = props;
+        const {links} = props;
 
         const handleMouseEnter = () => {
             setIsHovered(true);
@@ -112,12 +129,12 @@ function NavBar() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
                 <div className='w-full h-full relative'>
-                        <p className='text-2xl flex-[100%] h-full flex items-center justify-center w-full'>Services</p>
+                        <p className='text-2xl flex-[100%] h-full flex items-center justify-center w-full small'>{section}</p>
                         {isHovered && (
                         <div className="w-fit pb-[1rem] pr-[1rem] pl-[1rem] h-fit  bg-thirdarylol border-l-[2px] border-b-[2px] border-r-[2px] border-primary absolute z-[9999] whitespace-nowrap">
-                            <Link onClick={handleClick} className='w-full h-[33%] ' to="/services1"><p className=' mt-[1rem] text-[1.4rem] text-center' key={0}>{titles[0]}</p></Link>
-                            <Link onClick={handleClick} className='w-full h-[33%] ' to="/services2"><p className=' mt-[1rem] text-[1.4rem] text-center' key={1}>{titles[1]}</p></Link>
-                            <Link onClick={handleClick} className='w-full h-[33%] ' to="/services3"><p className=' mt-[1rem] text-[1.4rem] text-center'key={2}>{titles[2]}</p></Link>
+                            <Link onClick={handleClick} className='w-full h-[33%] ' to={links[0]}><p className=' mt-[1rem] text-[1.4rem] text-center light' key={0}>{titles[0]}</p></Link>
+                            <Link onClick={handleClick} className='w-full h-[33%] ' to={links[1]}><p className=' mt-[1rem] text-[1.4rem] text-center light' key={1}>{titles[1]}</p></Link>
+                            <Link onClick={handleClick} className='w-full h-[33%] ' to={links[2]}><p className=' mt-[1rem] text-[1.4rem] text-center light'key={2}>{titles[2]}</p></Link>
                         </div>
                         )}
                 </div>
@@ -130,21 +147,21 @@ function NavBar() {
             <div class="nav-header flex h-28 lg:h-24 w-full bg-primary border-b border-thirdarylol lg:border-b-[1px]">
                 <div className='w-full lg:w-[35%] h-full flex lg:ml-[2rem]'>
                     <Link className='justify-self-start ml-[.5rem]' onClick={handleClick} to="/"><img className='h-full' src='image0.webp' alt="fix later"></img></Link>
-                    <h1 className='self-center text-center lg:text-start lg:pl-[2rem] flex-1 text-3xl md:text-3xl tracking-widest'>SoCalTubSpecialist</h1>
+                    <h1 className='self-center text-center lg:text-start lg:pl-[2rem] flex-1 text-2xl md:text-3xl  tracking-widest curly'>SoCalTubSpecialist</h1>
                 </div>
                 <div className='w-1/5 lg:w-[65%] md:w-[auto] h-full flex justify-end lg:justify-center items-center mr-[1rem] lg:mr-[0]'>
-                    <ul className='w-[80%] h-full flex-row items-center hidden lg:flex'>
-                        <li className='w-full text-center text-2xl  underline'>
+                    <ul className='w-[80%] h-full flex-row items-center hidden lg:flex small'>
+                        <li className='w-full text-center text-2xl '>
                             <Link onClick={handleClick} to="/">Home</Link>
                         </li>
                         <li className=' w-full text-center text-2xl'>
                             <Link onClick={handleClick} to="/About">About</Link>
                         </li>
-                        <ServicesDesktop titles={desktopServices}/>
+                        <ServicesDesktop titles={desktopServices} section={sectionTitle[0]} links={servicesLinks}/>
                         <li className='w-full text-center text-2xl'>
                             <Link onClick={handleClick} to="/Gallery">Gallery</Link>
                         </li >
-                        <ServicesDesktop titles={desktopLocations}/>
+                        <ServicesDesktop titles={desktopLocations} section={sectionTitle[1]} links={locationLinks}/>
                         <li className=' w-full text-center text-2xl'>
                             <Link onClick={handleClick} to="/Contact">Contact</Link>
                         </li>
@@ -154,18 +171,18 @@ function NavBar() {
             </div>
             <div  className={`h-[85vh] lg:hidden relative  bg-thirdarylol w-full nav-collapse flex justify-center border-b-2 border-b-primary ${menuOpen ? 'open' : 'close'}`}> 
                 <ul className='list-none w-full flex flex-col items-center justify-center text-5xl font-header-font'>
-                    <li className='w-full text-center pb-6 md:pb-10 '>
+                    <li className='w-full text-center pb-10 md:pb-10 small text-[2.6rem]'>
                          <Link onClick={handleClick} to="/">Home</Link>
                     </li>
-                    <li className=' w-full text-center pb-6 md:pb-10'>
+                    <li className=' w-full text-center pb-10 md:pb-10 small text-[2.6rem]'>
                         <Link onClick={handleClick} to="/About">About</Link>
                     </li>
                     <DropServices />
-                    <li className='w-full text-center pb-6 md:pb-10'>
+                    <li className='w-full text-center pb-10 md:pb-10 small text-[2.6rem]'>
                         <Link onClick={handleClick} to="/Gallery">Gallery</Link>
                     </li >
                     <DropLocations />
-                    <li className=' w-full text-center pb-6 md:pb-10'>
+                    <li className=' w-full text-center  small text-[2.6rem]'>
                         <Link onClick={handleClick} to="/Contact">Contact</Link>
                     </li>
                 </ul>

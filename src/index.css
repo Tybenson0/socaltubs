@@ -15,15 +15,25 @@
     src: url("/public/Poppins-Medium.woff");
 }
 @font-face {
-    font-family: "Poppins-semi";
-    src: url("/public/Poppins-SemiBold.woff");
+    font-family: "Poppins-light";
+    src: url("/public/Poppins-ExtraLight.woff");
 }
-h1 {
+html {
+    background-color: #FAF9F6;
+}
+.small {
+    font-family: poppins;
+}
+.medium {
+    font-family: poppins-M;
+}
+.light {
+    font-family: poppins-light;
+}
+.curly {
     font-family: header-font;
 }
-h3, h2 {
-    font-family: Poppins-M;
-}
+
 @media (min-width:1024px) {
     h2, h3 {
         font-family: poppins;
@@ -58,11 +68,10 @@ html, body {
 }
 .dropNav {
     display: flex;
-    height: 15rem;
     animation: dropNav .1s ease-in;
-    
-    padding-top: 1rem; 
-    padding-bottom: 1rem; 
+    height: fit;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border: 1px solid #84D3F3;
 }
 .closeNav {
@@ -96,6 +105,12 @@ html, body {
     max-height: 40vh;
     max-width: 95%;
      /* Adjust the value as needed */
+  }
+  @media (min-width: 1024px) {
+    .full-screen-image {
+        max-width: 50%;
+        max-height: 75vh;
+    }
   }
 
   .plusminus {
@@ -225,6 +240,25 @@ html, body {
     to {
       d: path("M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7");
     }
+  }
+
+  /* handles page enter transitions */
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-out;
   }
   
   .hb.animate-open .path-open {
