@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {motion} from 'framer-motion'
 export const Porcelain = () => {
-    const images = ['glass-1.jpeg', 'kitchen-1.png', 'porcelain-1.jpg',]
+    const images = ['glass.webp', 'vanity.webp', 'porcelain.webp',]
     return <motion.div 
             initial={{opacity: .7}}
             animate={{opacity: 1}}
@@ -16,7 +16,7 @@ export const Porcelain = () => {
                 
             </div>
             <div className='w-full h-full lg:w-[90%] lg:mt-[3rem] flex flex-col lg:flex-row-reverse items-center'>
-            <img src='porcelain-1.jpeg' alt='fix later' className="w-[85%] md:w-[55%] lg:h-[35rem] md:h-[25rem] h-[20rem]"></img>
+            <img src='porcelain.webp' alt='bathtub' className="w-[85%] md:w-[55%] lg:h-[35rem] md:h-[25rem] h-[25rem]"></img>
             <div className='w-full lg:w-[80%] h-full flex flex-col items-center'>
             <p className="w-[90%] text-[1.4rem] md:text-[1.6rem] leading-10 text-center indent-8 mt-8 small">
                 SoCalTubSpecialist is a premier provider of top-quality porcelain services for residents in Southern California. 
@@ -64,7 +64,7 @@ export const Porcelain = () => {
   };
   
 export const Glass = () => {
-    const images = ['glass-1.jpeg', 'kitchen-1.png', 'porcelain-1.jpg',]
+    const images = ['glass.webp', 'vanity.webp', 'porcelain.webp',]
     return <motion.div 
             initial={{opacity: .7}}
             animate={{opacity: 1}}
@@ -79,7 +79,7 @@ export const Glass = () => {
                 
             </div>
             <div className='w-full h-full lg:w-[90%] lg:mt-[3rem] flex flex-col lg:flex-row-reverse items-center'>
-            <img src='porcelain-1.jpeg' alt='fix later' className="w-[85%] md:w-[55%] lg:h-[35rem] md:h-[25rem] h-[20rem]"></img>
+            <img src='glass.webp' alt='bathroom glass' className="w-[85%] md:w-[55%] lg:h-[35rem] md:h-[25rem] h-[25rem]"></img>
             <div className='w-full lg:w-[80%] h-full flex flex-col items-center'>
             <p className="w-[90%] text-[1.4rem] md:text-[1.6rem] leading-10 text-center indent-8 mt-8 small">
                 SoCalTubSpecialist is a premier provider of top-quality porcelain services for residents in Southern California. 
@@ -127,7 +127,7 @@ export const Glass = () => {
 };
   
 export const Vanity = () => {
-    const images = ['glass-1.jpeg', 'kitchen-1.png', 'porcelain-1.jpg',]
+    const images = ['glass.webp', 'vanity.webp', 'porcelain.webp']
     return <motion.div 
             initial={{opacity: .7}}
             animate={{opacity: 1}}
@@ -142,7 +142,7 @@ export const Vanity = () => {
                 
             </div>
             <div className='w-full h-full lg:w-[90%] lg:mt-[3rem] flex flex-col lg:flex-row-reverse items-center'>
-            <img src='porcelain-1.jpeg' alt='fix later' className="w-[85%] md:w-[55%] lg:h-[35rem] md:h-[25rem] h-[20rem]"></img>
+            <img src='vanity.webp' alt='bathroom sink' className="w-[85%] md:w-[55%] lg:h-[35rem] md:h-[25rem] h-[27rem]"></img>
             <div className='w-full lg:w-[80%] h-full flex flex-col items-center'>
             <p className="w-[90%] text-[1.4rem] md:text-[1.6rem] leading-10 text-center indent-8 mt-8 small">
                 SoCalTubSpecialist is a premier provider of top-quality porcelain services for residents in Southern California. 

@@ -15,7 +15,7 @@ export const SantaClarita = () => {
                 
             </div >
             <div className="w-full lg:w-[80%] h-full flex flex-col items-center lg:flex-row">
-                <img src='bathrub.svg' alt='fix later' className="w-[85%]  h-[20rem]"></img>
+                <img src='santa.webp' alt='santa clarita' className="w-[85%]  h-[20rem] lg:h-[25rem]"></img>
             <div className="w-full h-full flex flex-col items-center">
             <p className="w-[90%] text-[1.4rem] leading-10 text-center indent-8 mt-8 small">
             Socal Tub Specialists, based in the picturesque Santa Clarita Valley in California, is renowned for
@@ -67,7 +67,7 @@ export const AntelopeValley = () => {
                 
             </div >
             <div className="w-full lg:w-[80%] h-full flex flex-col items-center lg:flex-row">
-                <img src='bathrub.svg' alt='fix later' className="w-[85%]  h-[20rem]"></img>
+                <img src='av.webp' alt='antelope valley' className="w-[85%]  h-[20rem] lg:h-[25rem]"></img>
             <div className="w-full h-full flex flex-col items-center">
             <p className="w-[90%] text-[1.4rem] leading-10 text-center indent-8 mt-8 small">
             Socal Tub Specialists, based in the picturesque Santa Clarita Valley in California, is renowned for
@@ -118,7 +118,7 @@ export const Surrounding = () => {
                 
             </div >
             <div className="w-full lg:w-[80%] h-full flex flex-col items-center lg:flex-row">
-                <img src='bathrub.svg' alt='fix later' className="w-[85%]  h-[20rem]"></img>
+                <img src='SV.webp' alt='surrounding valleys' className="w-[85%]  h-[20rem] lg:h-[25rem]"></img>
             <div className="w-full h-full flex flex-col items-center">
             <p className="w-[90%] text-[1.4rem] leading-10 text-center indent-8 mt-8 small">
             Socal Tub Specialists, based in the picturesque Santa Clarita Valley in California, is renowned for

@@ -58,7 +58,7 @@ function About() {
                 <span className="border-2 border-primary w-[50%] lg:w-[25%] mb-[2.5rem] mt-[2rem]"></span>
             </div>
             <div className='flex flex-col items-center lg:flex-row w-full lg:w-[70%] lg:max-h-[50%] lg:mt-[3rem]'>
-            <img src='kitchen-2.jpeg' alt='fix later' className="w-[30rem] h-[30rem] md:w-[40rem]  shadow-xl lg:flex-[40%]"></img>
+            <img src='about.webp' alt='bathroom mirror' className="w-[30rem] h-[30rem] md:w-[40rem]  shadow-xl lg:flex-[40%]"></img>
             <div className='flex flex-col items-center lg:flex-[60%] lg:h-[90%] overflow-hidden light'>
             <p className="w-[95%] md:w-[90%] text-[1.2rem] lg:text-[1.2rem] leading-10 lg:leading-8 text-center indent-4 lg:mt-[0] mt-8 small">
                 SoCal Tub Specialist is a reputable and established family-owned business serving the 
