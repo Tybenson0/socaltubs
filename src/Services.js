@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import {motion} from 'framer-motion'
 export const Porcelain = () => {
     const images = ['glass-1.jpeg', 'kitchen-1.png', 'porcelain-1.jpg',]
-    return <div className="w-full h-fit bg-thirdarylol flex flex-col items-center">
+    return <motion.div 
+            initial={{opacity: .7}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+            className="w-full h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[6rem] flex flex-col items-center">
                 <h2 className=" text-5xl md:text-[3.2rem] leading-[3.2rem] w-[75%] text-center small">
                     Porcelain services
@@ -55,12 +60,16 @@ export const Porcelain = () => {
                         <h3 className="text-4xl mt-[5rem] lg:mt-[8rem] text-center light">Quality-loving experts at SoCalTubSpecialist.</h3>
                         <ImageCarousel images={images}/>
                         
-    </div>;
+    </motion.div>;
   };
   
 export const Glass = () => {
     const images = ['glass-1.jpeg', 'kitchen-1.png', 'porcelain-1.jpg',]
-    return <div className="w-full h-fit bg-thirdarylol flex flex-col items-center">
+    return <motion.div 
+            initial={{opacity: .7}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+            className="w-full h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[6rem] flex flex-col items-center">
                 <h1 className=" text-5xl md:text-[3.2rem] leading-[3.2rem] w-[75%] text-center small">
                     Fiber Glass services
@@ -114,12 +123,16 @@ export const Glass = () => {
                         <h5 className="text-4xl mt-[5rem] lg:mt-[8rem] text-center light">Quality-loving experts at SoCalTubSpecialist.</h5>
                         <ImageCarousel images={images}/>
                         
-    </div>;
+    </motion.div>;
 };
   
 export const Vanity = () => {
     const images = ['glass-1.jpeg', 'kitchen-1.png', 'porcelain-1.jpg',]
-    return <div className="w-full h-fit bg-thirdarylol flex flex-col items-center">
+    return <motion.div 
+            initial={{opacity: .7}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+            className="w-full h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[6rem] flex flex-col items-center">
                 <h1 className=" text-5xl md:text-[3.2rem] leading-[3.2rem] w-[75%] text-center small">
                     Vanity services
@@ -173,7 +186,7 @@ export const Vanity = () => {
                         <h3 className="text-4xl mt-[5rem] lg:mt-[8rem] text-center light">Quality-loving experts at SoCalTubSpecialist.</h3>
                         <ImageCarousel images={images}/>
                         
-    </div>;
+    </motion.div>;
 };
 
 const ImageCarousel = ({ images }) => {

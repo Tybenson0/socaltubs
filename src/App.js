@@ -8,8 +8,8 @@ function App() {
       <Router>
         <NavBar />
             <Animated />
-      <Footer />
       </Router>
+      <Footer />
     </section >
   );
 }

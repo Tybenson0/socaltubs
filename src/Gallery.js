@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {motion} from 'framer-motion'
 
 const Gallery = () => {
   const imagesPorcelain = [
@@ -40,7 +41,11 @@ const Gallery = () => {
     );
   };
   return (
-    <div className='w-full h-fit mb-[4rem] pt-[12rem] lg:pt-[6rem] flex flex-col items-center bg-thirdarylol'>
+    <motion.div 
+      initial={{opacity: .7}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+    className='w-full h-fit mb-[4rem] pt-[12rem] lg:pt-[6rem] flex flex-col items-center bg-thirdarylol'>
       <h1 className='text-4xl border-[3px] border-primary w-fit h-fit p-[.8rem] medium'>Projects Gallery</h1>
       <p className="w-[90%] text-[1.4rem] text-center mt-[2rem] leading-[2.5rem] indent-[.5rem] small"> 
         We take immense pride in showcasing our work. With unwavering 
@@ -94,7 +99,7 @@ const Gallery = () => {
         <GridItem image={imagesGlass[0]} />
         </div>
         
-    </div>
+    </motion.div>
   );
 };
 

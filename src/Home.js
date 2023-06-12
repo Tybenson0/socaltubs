@@ -2,9 +2,9 @@ import {motion} from 'framer-motion'
 
 function Home() {
     return (
-        <motion.div className='w-full h-full'
+        <motion.div className='w-full h-fit'
         
-        initial={{opacity: 0}}
+        initial={{opacity: .7}}
         animate={{opacity: 1}}
         exit={{opacity: 0}}
         >

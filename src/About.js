@@ -46,7 +46,7 @@ function About() {
     
     return (
         <motion.div
-        initial={{opacity: 0}}
+        initial={{opacity: .7}}
         animate={{opacity: 1}}
         exit={{opacity: 0}}
          className="w-full h-fit bg-thirdarylol flex flex-col items-center">

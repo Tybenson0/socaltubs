@@ -262,9 +262,9 @@ html, body {
   }
   
   .hb.animate-open .path-open {
-    animation: openAnimation 0.2s forwards;
+    animation: openAnimation 0.3s forwards;
   }
   
   .hb.animate-close .path-close {
-    animation: closeAnimation 0.2s forwards;
+    animation: closeAnimation 0.3s forwards;
   }

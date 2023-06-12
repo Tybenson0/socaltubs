@@ -1,7 +1,11 @@
-
+import {motion} from 'framer-motion'
 export const SantaClarita = () => {
     return (
-        <div className="w-fit h-fit bg-thirdarylol flex flex-col items-center">
+        <motion.div 
+        initial={{opacity: .7}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        className="w-fit h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[5rem] flex flex-col items-center">
                 <h1 className=" text-4xl leading-[2.5rem] w-[75%] text-center small">
                     Top Tub Specialist Serving Santa Clarita
@@ -43,13 +47,17 @@ export const SantaClarita = () => {
                 <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem] small">Start my Remodel</h3>
             </div>
             
-        </div>
+        </motion.div>
     );
   };
 
 export const AntelopeValley = () => {
     return (
-        <div className="w-fit h-fit bg-thirdarylol flex flex-col items-center">
+        <motion.div 
+        initial={{opacity: .7}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        className="w-fit h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[5rem] flex flex-col items-center">
                 <h1 className=" text-4xl leading-[2.5rem] w-[75%] text-center small">
                     Top Tub Specialist Serving Antelope Valley
@@ -91,12 +99,16 @@ export const AntelopeValley = () => {
                 <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem] small">Start my Remodel</h3>
             </div>
             
-        </div>
+        </motion.div>
     );
   };
 export const Surrounding = () => {
     return (
-        <div className="w-fit h-fit bg-thirdarylol flex flex-col items-center">
+        <motion.div 
+        initial={{opacity: .7}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        className="w-fit h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[5rem] flex flex-col items-center">
                 <h1 className=" text-4xl leading-[2.5rem] w-[75%] text-center small">
                     Top Tub Specialist Serving Surrounding Areas
@@ -138,6 +150,6 @@ export const Surrounding = () => {
                 <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem] small">Start my Remodel</h3>
             </div>
             
-        </div>
+        </motion.div>
     );
   };

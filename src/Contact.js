@@ -1,7 +1,11 @@
-
+import {motion} from 'framer-motion'
 function Contact() {
     return (
-        <div className="w-full h-full md:h-fit md:pb-[10rem] bg-thirdarylol flex flex-col items-center md:justify-center">
+        <motion.div 
+        initial={{opacity: .7}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        className="w-full h-full md:h-fit md:pb-[10rem] bg-thirdarylol flex flex-col items-center md:justify-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[5rem] flex flex-col justify-center items-center">
                 <h1 className=" text-5xl leading-[2.8rem] w-[85%] text-center small">
                     Lets see what we can do for you
@@ -48,7 +52,7 @@ function Contact() {
                     />
                 </form>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
