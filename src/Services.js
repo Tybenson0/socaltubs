@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom';
 export const Porcelain = () => {
     const images = ['glass.webp', 'vanity.webp', 'porcelain.webp',]
     return <motion.div 
@@ -31,9 +32,9 @@ export const Porcelain = () => {
             </p>
             </div>
             </div>
-            <div className="w-[25rem]  h-[5rem] border-[2px] border-secondary  mt-[2.5rem] md:mt-[5rem] bg-primary flex justify-center items-center">
-                <h3 className="text-3xl md:text-[2rem] small">Start my Remodel</h3>
-            </div>
+            <Link to="/Contact"><div className="w-[25rem] lg:w-[18rem] lg:h-[3rem] h-[5rem] border-[2px] border-secondary  mt-[2.5rem] mb-[2.5rem] bg-primary flex justify-center items-center">
+                <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem] small">Start my Remodel</h3>
+            </div></Link>
                 
                     <div className="w-full md:w-[65%] h-[80vh] flex flex-col items-center lg:w-full  md:h-[50vh] lg:h-[80vh]  lg:border-none lg:border-l-2 relative mt-[2rem] md:mt-[4rem] shadow-md"> 
                         <div className="w-full h-full bg-primary absolute opacity-100 z-[1]"></div>
@@ -94,9 +95,9 @@ export const Glass = () => {
             </p>
             </div>
             </div>
-            <div className="w-[25rem]  h-[5rem] border-[2px] border-secondary  mt-[2.5rem] md:mt-[5rem] bg-primary flex justify-center items-center">
-                <h3 className="text-3xl md:text-[2rem] small">Start my Remodel</h3>
-            </div>
+            <Link to="/Contact"><div className="w-[25rem] lg:w-[18rem] lg:h-[3rem] h-[5rem] border-[2px] border-secondary  mt-[2.5rem] mb-[2.5rem] bg-primary flex justify-center items-center">
+                <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem] small">Start my Remodel</h3>
+            </div></Link>
                 
                     <div className="w-full md:w-[65%] h-[80vh] flex flex-col items-center lg:w-full  md:h-[50vh] lg:h-[80vh]  lg:border-none lg:border-l-2 relative mt-[2rem] md:mt-[4rem] shadow-md"> 
                         <div className="w-full h-full bg-primary absolute opacity-100 z-[1]"></div>
@@ -157,9 +158,9 @@ export const Vanity = () => {
             </p>
             </div>
             </div>
-            <div className="w-[25rem]  h-[5rem] border-[2px] border-secondary  mt-[2.5rem] md:mt-[5rem] bg-primary flex justify-center items-center">
-                <h4 className="text-3xl md:text-[2rem] small">Start my Remodel</h4>
-            </div>
+            <Link to="/Contact"><div className="w-[25rem] lg:w-[18rem] lg:h-[3rem] h-[5rem] border-[2px] border-secondary  mt-[2.5rem] mb-[2.5rem] bg-primary flex justify-center items-center">
+                <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem] small">Start my Remodel</h3>
+            </div></Link>
                 
                     <div className="w-full md:w-[65%] h-[80vh] flex flex-col items-center lg:w-full  md:h-[50vh] lg:h-[80vh]  lg:border-none lg:border-l-2 relative mt-[2rem] md:mt-[4rem] shadow-md"> 
                         <div className="w-full h-full bg-primary absolute opacity-100 z-[1]"></div>

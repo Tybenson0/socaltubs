@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom';
 
 const Gallery = () => {
   const imagesPorcelain = [
@@ -54,7 +55,7 @@ const Gallery = () => {
           Immerse yourself in our captivating displays and witness the stunning results we consistently achieve. We are thrilled 
           to show off our work and share the joy of our remarkable tub transformations with you.
       </p>
-      <p className="mt-[2rem] text-[1.4rem] w-[90%] text-center light">Like anything you see? <span className="border-b-[2px] border-b-secondary pb-[2px]">Contact us today to get a free quote!</span></p>
+      <p className="mt-[2rem] text-[1.4rem] w-[90%] text-center light">Like anything you see? <Link to="/contact"> <span className="border-b-[2px] border-b-secondary pb-[2px]">Contact us today to get a free quote!</span></Link></p>
       <div className="w-[95%] md:w-[85%] lg:w-[70%] h-fit mt-[4rem] grid grid-cols-2 lg:grid-cols-3 grid-rows-6 gap-[1.5rem] bg-thirdarylol">
         <h2 className='w-full max-h-fit text-[2.4rem] tracking-widest flex justify-center items-center text-center border-l-primary border-l-[2px] border-t-primary border-t-[2px] small'>Porcelain Projects</h2>
         <GridItem image={imagesPorcelain[0]} />

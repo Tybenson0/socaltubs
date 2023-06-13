@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom';
 export const SantaClarita = () => {
     return (
         <motion.div 
@@ -15,7 +16,7 @@ export const SantaClarita = () => {
                 
             </div >
             <div className="w-full lg:w-[80%] h-full flex flex-col items-center lg:flex-row">
-                <img src='santa.webp' alt='santa clarita' className="w-[85%]  h-[20rem] lg:h-[25rem]"></img>
+                <img src='santa.webp' alt='santa clarita' className="w-[85%] md:w-[50%]  h-[20rem] lg:h-[25rem]"></img>
             <div className="w-full h-full flex flex-col items-center">
             <p className="w-[90%] text-[1.4rem] leading-10 text-center indent-8 mt-8 small">
             Socal Tub Specialists, based in the picturesque Santa Clarita Valley in California, is renowned for
@@ -43,9 +44,9 @@ export const SantaClarita = () => {
             </div>
             </div>
             
-            <div className="w-[25rem] lg:w-[18rem] lg:h-[3rem] h-[5rem] border-[2px] border-secondary  mt-[2.5rem] mb-[2.5rem] bg-primary flex justify-center items-center">
+            <Link to="/Contact"><div className="w-[25rem] lg:w-[18rem] lg:h-[3rem] h-[5rem] border-[2px] border-secondary  mt-[2.5rem] mb-[2.5rem] bg-primary flex justify-center items-center">
                 <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem] small">Start my Remodel</h3>
-            </div>
+            </div></Link>
             
         </motion.div>
     );
@@ -67,7 +68,7 @@ export const AntelopeValley = () => {
                 
             </div >
             <div className="w-full lg:w-[80%] h-full flex flex-col items-center lg:flex-row">
-                <img src='av.webp' alt='antelope valley' className="w-[85%]  h-[20rem] lg:h-[25rem]"></img>
+                <img src='av.webp' alt='antelope valley' className="w-[85%] md:w-[50%] h-[20rem] lg:h-[25rem]"></img>
             <div className="w-full h-full flex flex-col items-center">
             <p className="w-[90%] text-[1.4rem] leading-10 text-center indent-8 mt-8 small">
             Socal Tub Specialists, based in the picturesque Santa Clarita Valley in California, is renowned for
@@ -95,9 +96,9 @@ export const AntelopeValley = () => {
             </div>
             </div>
             
-            <div className="w-[25rem] lg:w-[18rem] lg:h-[3rem] h-[5rem] border-[2px] border-secondary  mt-[2.5rem] mb-[2.5rem] bg-primary flex justify-center items-center">
+            <Link to="/Contact"><div className="w-[25rem] lg:w-[18rem] lg:h-[3rem] h-[5rem] border-[2px] border-secondary  mt-[2.5rem] mb-[2.5rem] bg-primary flex justify-center items-center">
                 <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem] small">Start my Remodel</h3>
-            </div>
+            </div></Link>
             
         </motion.div>
     );
@@ -118,7 +119,7 @@ export const Surrounding = () => {
                 
             </div >
             <div className="w-full lg:w-[80%] h-full flex flex-col items-center lg:flex-row">
-                <img src='SV.webp' alt='surrounding valleys' className="w-[85%]  h-[20rem] lg:h-[25rem]"></img>
+                <img src='SV.webp' alt='surrounding valleys' className="w-[85%] md:w-[50%] h-[20rem] lg:h-[25rem]"></img>
             <div className="w-full h-full flex flex-col items-center">
             <p className="w-[90%] text-[1.4rem] leading-10 text-center indent-8 mt-8 small">
             Socal Tub Specialists, based in the picturesque Santa Clarita Valley in California, is renowned for
@@ -146,9 +147,9 @@ export const Surrounding = () => {
             </div>
             </div>
             
-            <div className="w-[25rem] lg:w-[18rem] lg:h-[3rem] h-[5rem] border-[2px] border-secondary  mt-[2.5rem] mb-[2.5rem] bg-primary flex justify-center items-center">
+            <Link to="/Contact"><div className="w-[25rem] lg:w-[18rem] lg:h-[3rem] h-[5rem] border-[2px] border-secondary  mt-[2.5rem] mb-[2.5rem] bg-primary flex justify-center items-center">
                 <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem] small">Start my Remodel</h3>
-            </div>
+            </div></Link>
             
         </motion.div>
     );

@@ -3,6 +3,7 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import Animated from './Animated';
 
 function App() {
+  
   return (
     <section className='min-w-screen h-screen bg-thirdarylol'>
       <Router>
@@ -24,18 +25,15 @@ const Footer = () => {
                           <h3 className="flex-[85%] text-[1.4rem] ml-[1rem] small">(661) 506-6023 </h3>
                       </div>
                       <div className="h-[33%]  w-full flex flex-row items-center">
-                          <img className='h-[2rem] w-[2rem] flex-[15%] ml-[.25rem] lg:ml-[.75rem]' src='email.svg' alt="fix later"></img>
-                          <h3 className="flex-[85%] text-[1.4rem] ml-[2rem] small">socaltubspecialist@gmail.com</h3>
+                          <img className='h-[2rem] w-[2rem] flex-[15%] ml-[.25rem] lg:ml-[0]' src='email.svg' alt="fix later"></img>
+                          <h3 className="flex-[85%] text-[1.4rem] ml-[1rem] lg:-[ml-.5rem] small">socaltubspecialist@gmail.com</h3>
                       </div>
                       <div className="h-[34%]  w-full flex flex-row items-center">
                           <img className='h-[2rem] w-[2rem] flex-[15%] ' src='location.svg' alt="fix later"></img>
                           <h3 className="flex-[85%] text-[1.4rem] ml-[1rem] small">Santa Clarita, California, 91355</h3>
                       </div>
                   </div>
-                  <div className="flex-[15%] w-full h-full flex flex-col ml-[2rem] justify-start items-center">
-                  <img className='h-[75%] w-[60%] lg:w-[55%]' src='instagram.svg' alt="fix later"></img>
-                  <img className='h-[75%] w-[60%] lg:w-[55%] ' src='facebook.svg' alt="fix later"></img>
-                  </div>
+                  
                   </div>
               <h4 className="mt-[2rem] mb-[3rem] lg:mb-[8rem] font-header-font text-[.8rem] md:text-[1.2rem] lg:text-[.6rem] opacity-[.6] small">@ 2023 by SoCalTubSpecialist. Designed by TySlyDesigns</h4>
               </div>

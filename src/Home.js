@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -15,7 +16,7 @@ function Home() {
                     <div className="w-full h-full relative flex justify-center items-center flex-col p-6 gap-6">
                         <h2 className=" text-center text-black text-3xl md:text-4xl lg:text-3xl medium">Elevate your space with a specialist</h2>
                         <span className="w-[80%] lg:w-[60%] h-[2px] bg-secondary"></span>
-                        <p className="text-center small text-[1.3rem] lg:text-[1.4rem] md:text-[1.5rem] md:leading-[3rem]">
+                        <p className="text-center light text-[1.4rem] lg:text-[1.4rem] md:text-[1.5rem] md:leading-[3rem]">
                             At SoCalTubSpecialist, we as a top-rated bathroom remodeling contractor serving Santa 
                             Clarita and Antelope Valley, Our team of skilled craftsmen are committed to delivering outstanding results, whether you're looking 
                             to update your shower, install a new bathtub, or create a custom tile design we are your go-to.
@@ -25,9 +26,9 @@ function Home() {
             </div>
         </div>
         <div className=" w-full h-fit flex flex-col items-center bg-thirdarylol">
-            <div className="w-[25rem] md:w-[28rem] lg:w-[22rem] h-[5rem] lg:h-[4rem] border-[2px] border-secondary mt-[-1rem] lg:mt-[-2rem] bg-primary flex justify-center items-center relative z-[11] shadow-md">
-                <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem] small">Get a Free Estimate</h3>
-            </div>
+        <Link to="/Contact"><div className="w-[25rem] lg:w-[18rem] lg:h-[3rem] h-[5rem] border-[2px] border-secondary  mt-[2.5rem] mb-[2.5rem] bg-primary flex justify-center items-center">
+                <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem] small">Start my Remodel</h3>
+            </div></Link>
             <div className=" w-[90%]  h-full flex flex-col items-center pt-[4rem]">
                 <h2 className="text-4xl md:text-[2.4rem] text-center w-[90%] medium  text-black">The Best Tub Specialist in Town</h2>
                 <p className="text-center text-black text-2xl md:text-[1.6rem] indent-4 pt-8 lg:w-[75%] small">
@@ -43,32 +44,32 @@ function Home() {
                 </p>
                 <div className="w-full h-full flex flex-col items-center">
                 <div className="w-full md:w-[85%] h-full  flex flex-col lg:flex-row items-center mt-[7rem]">
-                    <img className="object-cover w-full md:w-[85%] max-h-[22rem] md:max-h-[33rem] shadow-xl" src="porcelain-1.jpeg" alt="fix later"></img>
+                    <img className="object-cover w-full md:w-[85%] max-h-[22rem] md:max-h-[33rem] shadow-xl" src="porcelain.webp" alt="fix later"></img>
                     <div className="w-full h-full flex flex-col items-center"> 
-                    <h3 className="w-full text-center text-3xl mt-6 ">Porcelian</h3>
+                    <h3 className="w-full text-center text-3xl mt-6 medium">Porcelian</h3>
                     <span className="border-2 border-primary w-[20%] mb-[1rem] mt-[1rem]"></span>
-                    <p className="text-center mt-3 text-[1.4rem]  lg:w-[75%]">
+                    <p className="text-center mt-3 text-[1.4rem] small lg:w-[75%]">
                         At SoCalTubSpecialist, we specialize in porcelain work for bathroom remodeling projects.
                          Our expert team can handle everything from tile installation and repair to refinishing,
                           ensuring a beautiful and durable finish that will stand the test of time.</p>
                     </div>
                 </div>
                 <div className="w-full md:w-[85%] mt-[5rem]  flex flex-col lg:flex-row-reverse items-center">
-                    <img className="object-cover w-full md:w-[85%] max-h-[22rem] md:max-h-[32rem] shadow-xl" src="glass-1.jpeg" alt="fix later"></img>
+                    <img className="object-cover w-full md:w-[85%] max-h-[22rem] md:max-h-[32rem] shadow-xl" src="glass.webp" alt="fix later"></img>
                     <div className="w-full h-full flex flex-col items-center"> 
-                    <h3 className="w-full text-center text-3xl mt-6">Fiber Glass</h3>
+                    <h3 className="w-full text-center text-3xl mt-6 medium">Fiber Glass</h3>
                     <span className="border-2 border-primary w-[25%] mb-[1rem] mt-[1rem]"></span>
-                    <p className="text-center mt-3 text-[1.4rem] lg:w-[75%]"> 
+                    <p className="text-center mt-3 text-[1.4rem] small lg:w-[75%]"> 
                     SoCalTubSpecialist is your go-to expert for fiberglass work in your bathroom. From fiberglass 
                     tub and shower repair to refinishing, our team can provide a beautiful and long-lasting finish for your bathroom.</p>
                     </div>
                 </div>
                 <div className="w-full md:w-[85%] mt-[5rem]  flex flex-col lg:flex-row items-center ">
-                    <img className="object-cover w-full md:w-[85%] max-h-[22rem] md:max-h-[32rem] shadow-xl" src="kitchen-2.jpeg" alt="fix later"></img>
+                    <img className="object-cover w-full md:w-[85%] max-h-[22rem] md:max-h-[32rem] shadow-xl" src="vanity.webp" alt="fix later"></img>
                     <div className="w-full h-full flex flex-col items-center"> 
-                    <h3 className="w-full text-center text-3xl mt-6">Kitchen and Vanity Countertops</h3>
+                    <h3 className="w-full text-center text-3xl mt-6 medium">Kitchen and Vanity Countertops</h3>
                     <span className="border-2 border-primary w-[50%] mb-[1rem] mt-[1rem]"></span>
-                    <p className="text-center text-[1.4rem] mt-3 lg:w-[75%]">  
+                    <p className="text-center text-[1.4rem] small mt-3 lg:w-[75%]">  
                         Looking to upgrade your kitchen or vanity? SoCalTubSpecialist offers expert remodeling services,
                          including custom cabinetry, countertops, and tile work, to create a functional and stylish space 
                          that meets your unique needs and tastes.
@@ -83,12 +84,12 @@ function Home() {
                     <div className="w-full h-full bg-primary absolute opacity-90 z-[1]"></div>
                     <div className="w-full h-full z-50 relative flex flex-col items-center justify-center p-[1rem]">
                         <div className="flex flex-col justify-center items-center h-[90%]">
-                        <p className="text-center text-[1.4rem] md:text-[1.8rem] md:leading-[2.8rem] md:w-[90%] font-medium leading-9 lg:text-[1.6rem]">
+                        <p className="text-center text-[1.4rem] font-semibold md:text-[1.8rem] md:leading-[2.8rem] md:w-[90%] light leading-9 lg:text-[1.6rem]">
                             SoCalTubSpecialist is a top-rated bathroom remodeling company, proudly serving Santa Clarita and the
                             surrounding valleys with expert vanity installation services. Contact us today to transform your bathroom
                             into a beautiful and functional space.</p>
                             
-                        <ul className=" w-fit h-full flex flex-col ml-[2rem]"> 
+                        <ul className=" w-fit h-full flex flex-col ml-[2rem] small"> 
                             <li className="text-[1.6rem] md:text-[2rem] lg:text-[1.8rem] flex justify-start items-center flex-auto"><span className="border-[2px] border-secondary w-[1.5rem] mr-[.5rem]"></span>Castaic</li>
                             <li className="text-[1.6rem] md:text-[2rem] lg:text-[1.8rem] flex justify-start items-center flex-auto"><span className="border-[2px] border-secondary w-[1.5rem] mr-[.5rem]"></span>Newhall</li> { /* fix this with proper links later */}
                             <li className="text-[1.6rem] md:text-[2rem] lg:text-[1.8rem] flex justify-start items-center flex-auto"><span className="border-[2px] border-secondary w-[1.5rem] mr-[.5rem]"></span>Valencia</li>

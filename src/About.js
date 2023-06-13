@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom';
 
 function About() {
     const cards = [
@@ -80,9 +81,9 @@ function About() {
             </p>
             </div>
             </div>
-            <div className="w-[25rem]  h-[5rem] border-[2px] border-secondary  mt-[2.5rem] lg:mt-[5rem] bg-primary flex justify-center items-center shadow-xl">
-                <h3 className="text-3xl md:text-[2rem] small">Get a Free Estimate</h3>
-            </div>
+            <Link to="/Contact"><div className="w-[25rem] lg:w-[18rem] lg:h-[3rem] h-[5rem] border-[2px] border-secondary  mt-[2.5rem] mb-[2.5rem] bg-primary flex justify-center items-center">
+                <h3 className="text-3xl md:text-[2rem] lg:text-[1.6rem] small">Start my Remodel</h3>
+            </div></Link>
             
             <h2 className='text-3xl md:text-4xl mt-[8rem] mb-[1rem] light'>Don't Take Our Word For It!</h2>
             <Carousel />
