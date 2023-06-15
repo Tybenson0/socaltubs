@@ -12,7 +12,7 @@ a {
     user-select: none;
   }
   .home {
-    background-size: 100% 100%;
+    background-size: 100vw 100vh;
   }
 
 @font-face {
