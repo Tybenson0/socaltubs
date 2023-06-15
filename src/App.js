@@ -6,7 +6,7 @@ function App() {
   
   return (
     <section className='min-w-screen h-screen  bg-thirdarylol'>
-      <Router>
+      <Router basename='/socaltubs'>
         <NavBar />
             <Animated />
       </Router>
