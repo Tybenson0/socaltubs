@@ -17,7 +17,7 @@ function Contact() {
                     Free Estimate
                 </h3>
                 
-                <form className="w-[95%] h-[45vh] md:h-[40vh] lg:h-[60vh] flex flex-col items-center" name="contact" method="POST" netlify >
+                <form className="w-[95%] h-[45vh] md:h-[40vh] lg:h-[60vh] flex flex-col items-center" name="contact" method="POST" netlfiy data-netlify="true" >
                     <div className="grid grid-cols-2 gap-5 flex-[90%]">
                     <input type="hidden" name="form-name" value="contact"/>
                     <input
