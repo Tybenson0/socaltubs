@@ -45,7 +45,7 @@ function NavBar() {
             viewBox="0 0 10 10"
             stroke="#eee"
             strokeWidth=".6"
-            fill="rgba(0,0,0,0)"
+            fill="rgba(255,255,255, 0.3);"
             strokeLinecap="round"
             style={{ cursor: 'pointer' }}
             onClick={toggleMenu}
