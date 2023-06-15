@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom';
 export const Porcelain = () => {
-    const images = ['glass.webp', 'vanity.webp', 'porcelain.webp',]
+    const images = ['gallery/p-4.webp', 'gallery/p-5.webp', 'gallery/p-7.webp',]
     return <motion.div 
             initial={{opacity: .7}}
             animate={{opacity: 1}}
@@ -65,7 +65,7 @@ export const Porcelain = () => {
   };
   
 export const Glass = () => {
-    const images = ['glass.webp', 'vanity.webp', 'porcelain.webp',]
+    const images = ['gallery/g-1.webp', 'gallery/g-3.webp', 'gallery/g-7.webp']
     return <motion.div 
             initial={{opacity: .7}}
             animate={{opacity: 1}}
@@ -128,7 +128,7 @@ export const Glass = () => {
 };
   
 export const Vanity = () => {
-    const images = ['glass.webp', 'vanity.webp', 'porcelain.webp']
+    const images = ['gallery/v-1.webp', 'gallery/v-4.webp', 'gallery/v-7.webp']
     return <motion.div 
             initial={{opacity: .7}}
             animate={{opacity: 1}}

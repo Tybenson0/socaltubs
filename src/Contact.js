@@ -16,33 +16,43 @@ function Contact() {
                 <h3 className=" text-3xl leading-[2.4rem] w-[85%] text-center mb-[1rem] mt-[.5rem] small">
                     Free Estimate
                 </h3>
-                <form className="w-[95%] h-[45vh] md:h-[40vh] lg:h-[60vh] flex flex-col items-center">
+                
+                <form className="w-[95%] h-[45vh] md:h-[40vh] lg:h-[60vh] flex flex-col items-center" name="contact" method="POST" data-netlify="true" >
                     <div className="grid grid-cols-2 gap-5 flex-[90%]">
+                    <input type="hidden" name="form-name" value="contact"/>
                     <input
                     type="text"
+                    name="first name"
                     className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 max-h-[5rem] light"
                     placeholder="First Name"
+                    required
                     />
                     <input
                     type="text"
+                    name="last name"
                     className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 max-h-[5rem] light"
                     placeholder="Last Name"
+                    required
                     />
                     <input
                     type="email"
+                    name="email"
                     className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2 max-h-[5rem] light"
                     placeholder="Email"
+                    required
                     />
                     <input
                     type="tel"
+                    name="phone number"
                     className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2 max-h-[5rem] light"
-                    placeholder="Phone"
+                    placeholder="phone number"
                     />
                     <textarea
                     cols="10"
                     rows="5"
                     className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2 light"
                     placeholder="Write your message..."
+                    required
                     ></textarea>
                     </div>
                     <input
