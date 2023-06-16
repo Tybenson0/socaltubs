@@ -41,7 +41,7 @@ function NavBar() {
     const ToggleIcon = () => {
         const [isOpen, setOpen] = useState(false)
         return (
-            <Hamburger toggled={isOpen} toggle={setOpen} />
+            <Hamburger toggled={isOpen} toggle={setOpen} onClick={toggleMenu}/>
         );
       };
     
