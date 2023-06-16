@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Hamburger from 'hamburger-react'
 
 function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -38,23 +39,9 @@ function NavBar() {
         setMenuOpen(!menuOpen);
     }
     const ToggleIcon = () => {
+        const [isOpen, setOpen] = useState(false)
         return (
-            <button>
-                <svg
-                className={`hb lg:hidden ${menuOpen ? 'animate-open' : 'animate-close'} border-[3px] border-secondary w-[5rem] h-[5rem]`}
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 10 10"
-                stroke="#eee"
-                strokeWidth=".6"
-                fill="rgba(0,0,0,0)"
-                strokeLinecap="round"
-                style={{ cursor: 'pointer' }}
-                onClick={toggleMenu}
-                          >
-                <path className="path-open" />
-                <path className="path-close" />
-                          </svg>
-            </button>
+            <Hamburger toggled={isOpen} toggle={setOpen} />
         );
       };
     
@@ -150,7 +137,7 @@ function NavBar() {
                 <div className='w-full lg:w-[35%] h-full flex lg:ml-[2rem]'>
                     <Link className='justify-self-start ml-[.5rem]' onClick={handleClick} to="/"><img className='h-full w-[6rem]' src='image0.webp' alt="fix later"></img></Link>
                     <h1 className=' w-fit self-center text-center lg:text-start lg:pl-[2rem] flex-1 text-2xl md:text-3xl  tracking-widest curly'>SoCalTubSpecialist</h1>
-                    <ToggleIcon/>
+                     <ToggleIcon/>
                 </div>
                 <div className='w-1/5 lg:w-[65%] md:w-[auto] h-full flex justify-end lg:justify-center items-center mr-[1rem] lg:mr-[0]'>
                     <ul className='w-[80%] h-full flex-row items-center hidden lg:flex small'>
