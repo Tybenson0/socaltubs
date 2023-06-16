@@ -39,20 +39,7 @@ function NavBar() {
     }
     const ToggleIcon = () => {
         return (
-            <svg
-            className={`hb   ${menuOpen ? 'animate-open' : 'animate-close'} `}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 10 10"
-            stroke="#00000"
-            strokeWidth=".6"
-            fill="#00000"
-            strokeLinecap="round"
-            style={{ cursor: 'pointer' }}
-            onClick={toggleMenu}
-          >
-            <path className="path-open" />
-            <path className="path-close" />
-          </svg>
+            <img onClick={toggleMenu} src="email.svg" alt="fix your stupid fucking shit react or I will slit the devs throats"></img>
         );
       };
     
@@ -143,7 +130,7 @@ function NavBar() {
     };
 
     return (
-        <nav className='w-full overflow-hidden lg:overflow-visible fixed lg:relative z-[9998]'>
+        <nav className='w-full overflow-visible lg:overflow-visible fixed lg:relative z-[9998]'>
             <div class="nav-header flex h-28 lg:h-24 w-full bg-primary border-b border-thirdarylol lg:border-b-[1px]">
                 <div className='w-full lg:w-[35%] h-full flex lg:ml-[2rem]'>
                     <Link className='justify-self-start ml-[.5rem]' onClick={handleClick} to="/"><img className='h-full w-[6rem]' src='image0.webp' alt="fix later"></img></Link>

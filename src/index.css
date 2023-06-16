@@ -76,7 +76,7 @@ html, body {
 }
 .close {
     right: 100%;
-    animation: navClose .1s ease-in-out;
+    animation: navClose .1s ease-out;
     height: 0;
 }
 .dropNav {
