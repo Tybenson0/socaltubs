@@ -40,12 +40,12 @@ function NavBar() {
     const ToggleIcon = () => {
         return (
             <svg
-            className={`hb lg:hidden ${menuOpen ? 'animate-open' : 'animate-close'} border-[3px] border-secondary w-[5rem] h-[5rem]`}
+            className={`hb   ${menuOpen ? 'animate-open' : 'animate-close'} `}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 10 10"
             stroke="#eee"
             strokeWidth=".6"
-            fill="rgba(255,255,255, 0.3);"
+            fill="rgba(0,0,0,0)"
             strokeLinecap="round"
             style={{ cursor: 'pointer' }}
             onClick={toggleMenu}
