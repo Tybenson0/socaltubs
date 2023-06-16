@@ -166,8 +166,8 @@ function NavBar() {
                             <Link onClick={handleClick} to="/Contact">Contact</Link>
                         </li>
                     </ul>
-                   <ToggleIcon/>
                 </div>
+                   <ToggleIcon/>
             </div>
             <div  className={`h-[85vh] lg:hidden relative  bg-thirdarylol w-full nav-collapse flex justify-center border-b-2 border-b-primary ${menuOpen ? 'open' : 'close'}`}> 
                 <ul className='list-none w-full flex flex-col items-center justify-center text-5xl font-header-font'>
