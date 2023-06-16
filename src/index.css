@@ -163,7 +163,7 @@ html, body {
 	transform: translateY(-50%) rotate(90deg);
 }
 .opac {
-    animation: opac .3s ease-in;
+    animation: opac .5s ease-in;
 }
 .opac-close {
     opacity: 0;
