@@ -39,21 +39,22 @@ function NavBar() {
     }
     const ToggleIcon = () => {
         return (
-            <svg
-            className={`hb   ${menuOpen ? 'animate-open' : 'animate-close'} `}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 10 10"
-            stroke="#eee"
-            strokeWidth=".6"
-            fill="rgba(0,0,0,0)"
-            strokeLinecap="round"
-            style={{ cursor: 'pointer' }}
-            onClick={toggleMenu}
-          >
-            <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="#84D3F3" />
-            <path className="path-open" />
-            <path className="path-close" />
-          </svg>
+            <button>
+                <svg
+                className={`hb lg:hidden ${menuOpen ? 'animate-open' : 'animate-close'} border-[3px] border-secondary w-[5rem] h-[5rem]`}
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 10 10"
+                stroke="#eee"
+                strokeWidth=".6"
+                fill="rgba(0,0,0,0)"
+                strokeLinecap="round"
+                style={{ cursor: 'pointer' }}
+                onClick={toggleMenu}
+                          >
+                <path className="path-open" />
+                <path className="path-close" />
+                          </svg>
+            </button>
         );
       };
     
@@ -144,12 +145,12 @@ function NavBar() {
     };
 
     return (
-        <nav className='w-full h-fit lg:overflow-visible fixed lg:relative z-[9998]'>
-            <div class="nav-header flex h-fit lg:h-24 w-full bg-primary border-b border-thirdarylol lg:border-b-[1px]">
+        <nav className='w-full overflow-hidden lg:overflow-visible fixed lg:relative z-[9998]'>
+            <div class="nav-header flex h-28 lg:h-24 w-full bg-primary border-b border-thirdarylol lg:border-b-[1px]">
                 <div className='w-full lg:w-[35%] h-full flex lg:ml-[2rem]'>
                     <Link className='justify-self-start ml-[.5rem]' onClick={handleClick} to="/"><img className='h-full w-[6rem]' src='image0.webp' alt="fix later"></img></Link>
                     <h1 className=' w-fit self-center text-center lg:text-start lg:pl-[2rem] flex-1 text-2xl md:text-3xl  tracking-widest curly'>SoCalTubSpecialist</h1>
-                 <ToggleIcon/>
+                    <ToggleIcon/>
                 </div>
                 <div className='w-1/5 lg:w-[65%] md:w-[auto] h-full flex justify-end lg:justify-center items-center mr-[1rem] lg:mr-[0]'>
                     <ul className='w-[80%] h-full flex-row items-center hidden lg:flex small'>
@@ -169,7 +170,6 @@ function NavBar() {
                         </li>
                     </ul>
                 </div>
-                  
             </div>
             <div  className={`h-[85vh] lg:hidden relative  bg-thirdarylol w-full nav-collapse flex justify-center border-b-2 border-b-primary ${menuOpen ? 'open' : 'close'}`}> 
                 <ul className='list-none w-full flex flex-col items-center justify-center text-5xl font-header-font'>
