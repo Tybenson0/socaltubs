@@ -76,7 +76,7 @@ html, body {
 }
 .close {
     right: 100%;
-    animation: navClose .1s ease-out;
+    animation: navClose .2s ease-out;
     height: 0;
 }
 .dropNav {
@@ -161,6 +161,20 @@ html, body {
 
 .plusminus:after {
 	transform: translateY(-50%) rotate(90deg);
+}
+.opac {
+    animation: opac .3s ease-in;
+}
+.opac-close {
+    opacity: 0;
+}
+@keyframes opac {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
   @keyframes navOpen {
@@ -252,33 +266,7 @@ html, body {
     }
   }
 
-  @keyframes openAnimation {
-    from {
-      d: path("M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7");
-    }
-    to {
-      d: path("M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7");
-    }
-  }
-  
-  @keyframes closeAnimation {
-    from {
-      d: path("M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7");
-    }
-    to {
-      d: path("M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7");
-    }
-  }
-
-  
-  
-  .hb.animate-open .path-open {
-    animation: openAnimation 0.3s forwards;
-  }
-  
-  .hb.animate-close .path-close {
-    animation: closeAnimation 0.3s forwards;
-  }
+ 
 
   
   

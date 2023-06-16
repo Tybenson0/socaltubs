@@ -51,7 +51,7 @@ function NavBar() {
         
         return (
             <li className='w-full text-center pb-10 md:pb-10 ml-[.5rem]'>
-                        <button className='flex flex-row  justify-center w-full small text-[2.6rem] small' onClick={serviceToggle}>Services <div className={`plusminus mt-[.75rem] ml-[.5rem] justify-self-center ${dropOpen ? 'active' : ''}`}></div></button>
+                        <button className='flex flex-row  justify-center w-full small text-[2.2rem] small' onClick={serviceToggle}>Services <div className={`plusminus mt-[.75rem] ml-[.5rem] justify-self-center ${dropOpen ? 'active' : ''}`}></div></button>
                         <ul className={` w-full  flex-col justify-center gap-[1.5rem] mt-[.5rem]  ${dropOpen ? 'dropNav' : 'closeNav'}`}>
                             <li className='text-[1.8rem] small'>
                                 <Link onClick={handleClick} to="/services1">Porcelain</Link>
@@ -74,7 +74,7 @@ function NavBar() {
         }
         return (
             <li className='w-full text-center pb-10 md:pb-10 ml-[.5rem]'>
-                        <button className='flex flex-row  justify-center w-full text-[2.6rem] small' onClick={locationToggle}>Locations<div className={`plusminus mt-[.75rem] ml-[.5rem] justify-self-center ${dropOpen ? 'active' : ''}`}></div></button>
+                        <button className='flex flex-row  justify-center w-full text-[2.2rem] small' onClick={locationToggle}>Locations<div className={`plusminus mt-[.75rem] ml-[.5rem] justify-self-center ${dropOpen ? 'active' : ''}`}></div></button>
                         <ul className={`w-full hidden flex-col justify-center gap-[2.25rem] mt-[1.25rem]  ${dropOpen ? 'dropNav' : 'closeNav'}`}>
                             <li className='text-[1.8rem] small'>
                                 <Link onClick={handleClick} to="/SantaClarita">Santa Clarita</Link>
@@ -134,8 +134,8 @@ function NavBar() {
                     <h1 className='flex-[80%] w-fit self-center text-center lg:text-start lg:pl-[2rem] text-2xl md:text-3xl  tracking-widest curly'>SoCalTubSpecialist</h1>
                 </div>
                 <div className='w-1/5 lg:w-[65%] md:w-[auto] h-full flex justify-end lg:justify-center items-center mr-[1rem] lg:mr-[0]'>
-                    <div className='border-[2px] border-secondary'>
-                        <Hamburger toggled={menuOpen} toggle={toggleMenu} color='#FAF9F6' size={28} className=" w-[4rem] h-[4rem]"/>
+                    <div className='border-[2px] border-secondary lg:hidden'>
+                        <Hamburger toggled={menuOpen} toggle={toggleMenu} color='#FAF9F6' size={28}/>
                     </div>
                     <ul className='w-[80%] h-full flex-row items-center hidden lg:flex small'>
                         <li className='w-full text-center text-2xl hover:text-thirdarylol transition-colors duration-200'>
@@ -156,19 +156,19 @@ function NavBar() {
                 </div>
             </div>
             <div  className={`h-[85vh] lg:hidden relative  bg-thirdarylol w-full nav-collapse flex justify-center border-b-2 border-b-primary ${menuOpen ? 'open' : 'close'}`}> 
-                <ul className='list-none w-full flex flex-col items-center justify-center text-5xl font-header-font'>
-                    <li className='w-full text-center pb-10 md:pb-10 small text-[2.6rem] '>
+                <ul className={`'list-none w-full flex flex-col items-center justify-center text-5xl font-header-font' ${menuOpen ? 'opac' : 'opac-close'}`}>
+                    <li className='w-full text-center pb-10 md:pb-10 small text-[2.2rem] '>
                          <Link onClick={handleClick} to="/">Home</Link>
                     </li>
-                    <li className=' w-full text-center pb-10 md:pb-10 small text-[2.6rem]'>
+                    <li className=' w-full text-center pb-10 md:pb-10 small text-[2.2rem]'>
                         <Link onClick={handleClick} to="/About">About</Link>
                     </li>
                     <DropServices />
-                    <li className='w-full text-center pb-10 md:pb-10 small text-[2.6rem]'>
+                    <li className='w-full text-center pb-10 md:pb-10 small text-[2.2rem]'>
                         <Link onClick={handleClick} to="/Gallery">Gallery</Link>
                     </li >
                     <DropLocations />
-                    <li className=' w-full text-center  small text-[2.6rem]'>
+                    <li className=' w-full text-center  small text-[2.2rem]'>
                         <Link onClick={handleClick} to="/Contact">Contact</Link>
                     </li>
                 </ul>

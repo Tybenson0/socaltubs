@@ -2,9 +2,10 @@ import {motion} from 'framer-motion'
 function Contact() {
     return (
         <motion.div 
-        initial={{opacity: .7}}
-        animate={{opacity: 1}}
-        exit={{opacity: 0}}
+        initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: .01}}
+    transition={{ duration: 0.5 }}
         className="w-full h-full md:h-fit md:pb-[10rem] bg-thirdarylol flex flex-col items-center md:justify-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[5rem] flex flex-col justify-center items-center">
                 <h1 className=" text-5xl leading-[2.8rem] w-[85%] text-center small">
@@ -17,18 +18,20 @@ function Contact() {
                     Free Estimate
                 </h3>
                 
-                <form className="w-[95%] h-[45vh] md:h-[40vh] lg:h-[60vh] flex flex-col items-center" name="contact" method="POST" data-netlify="true" >
+                {/*<form className="w-[95%] h-[45vh] md:h-[40vh] lg:h-[60vh] flex flex-col items-center" name="contact" method="POST" data-netlify="true" >*/}
+                <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
                     <div className="grid grid-cols-2 gap-5 flex-[90%]">
                     <input
                     type="text"
-                    name="first name"
+                    name="firstname"
                     className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 max-h-[5rem] light"
                     placeholder="First Name"
                     required
                     />
                     <input
                     type="text"
-                    name="last name"
+                    name="lastname"
                     className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 max-h-[5rem] light"
                     placeholder="Last Name"
                     required
@@ -42,13 +45,14 @@ function Contact() {
                     />
                     <input
                     type="tel"
-                    name="phone number"
+                    name="phonenumber"
                     className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2 max-h-[5rem] light"
                     placeholder="phone number"
                     />
                     <textarea
                     cols="10"
                     rows="5"
+                    name="textarea"
                     className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2 light"
                     placeholder="Write your message..."
                     required

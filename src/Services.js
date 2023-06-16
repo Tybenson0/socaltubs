@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 export const Porcelain = () => {
     const images = ['gallery/p-4.webp', 'gallery/p-5.webp', 'gallery/p-7.webp',]
     return <motion.div 
-            initial={{opacity: .7}}
-            animate={{opacity: 1}}
-            exit={{opacity: 0}}
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: .01}}
+    transition={{ duration: 0.5 }}
             className="w-full h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[6rem] flex flex-col items-center">
                 <h2 className=" text-5xl md:text-[3.2rem] leading-[3.2rem] w-[75%] text-center small">
@@ -67,9 +68,10 @@ export const Porcelain = () => {
 export const Glass = () => {
     const images = ['gallery/g-1.webp', 'gallery/g-3.webp', 'gallery/g-7.webp']
     return <motion.div 
-            initial={{opacity: .7}}
-            animate={{opacity: 1}}
-            exit={{opacity: 0}}
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: .01}}
+    transition={{ duration: 0.5 }}
             className="w-full h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[6rem] flex flex-col items-center">
                 <h1 className=" text-5xl md:text-[3.2rem] leading-[3.2rem] w-[75%] text-center small">
@@ -130,9 +132,10 @@ export const Glass = () => {
 export const Vanity = () => {
     const images = ['gallery/v-1.webp', 'gallery/v-4.webp', 'gallery/v-7.webp']
     return <motion.div 
-            initial={{opacity: .7}}
-            animate={{opacity: 1}}
-            exit={{opacity: 0}}
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: .01}}
+    transition={{ duration: 0.5 }}
             className="w-full h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[6rem] flex flex-col items-center">
                 <h1 className=" text-5xl md:text-[3.2rem] leading-[3.2rem] w-[75%] text-center small">

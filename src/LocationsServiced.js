@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 export const SantaClarita = () => {
     return (
         <motion.div 
-        initial={{opacity: .7}}
+        initial={{opacity: 0}}
         animate={{opacity: 1}}
-        exit={{opacity: 0}}
+        exit={{opacity: .01}}
+        transition={{ duration: 0.5 }}
         className="w-fit h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[5rem] flex flex-col items-center">
                 <h1 className=" text-4xl leading-[2.5rem] w-[75%] text-center small">
@@ -55,9 +56,10 @@ export const SantaClarita = () => {
 export const AntelopeValley = () => {
     return (
         <motion.div 
-        initial={{opacity: .7}}
+        initial={{opacity: 0}}
         animate={{opacity: 1}}
-        exit={{opacity: 0}}
+        exit={{opacity: .01}}
+        transition={{ duration: 0.5 }}
         className="w-fit h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[5rem] flex flex-col items-center">
                 <h1 className=" text-4xl leading-[2.5rem] w-[75%] text-center small">
@@ -106,9 +108,10 @@ export const AntelopeValley = () => {
 export const Surrounding = () => {
     return (
         <motion.div 
-        initial={{opacity: .7}}
+        initial={{opacity: 0}}
         animate={{opacity: 1}}
-        exit={{opacity: 0}}
+        exit={{opacity: .01}}
+        transition={{ duration: 0.5 }}
         className="w-fit h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[5rem] flex flex-col items-center">
                 <h1 className=" text-4xl leading-[2.5rem] w-[75%] text-center small">

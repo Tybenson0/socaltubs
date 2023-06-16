@@ -5,9 +5,10 @@ function Home() {
     return (
         <motion.div className='w-full h-fit'
         
-        initial={{opacity: .7}}
+        initial={{opacity: 0}}
         animate={{opacity: 1}}
-        exit={{opacity: 0}}
+        exit={{opacity: .01}}
+        transition={{ duration: 0.5 }}
         >
         <div className="home relative w-full h-[88vh] lg:h-[110vh] bg-fixed  bg-center bg-hero-pattern flex justify-center lg:justify-end items-center z-10">
             <div className="w-[70%] lg:w-[36%] h-[70%] max-h-[400px] lg:max-h-fit lg:mr-[5%] border-2 border-thirdarylol mt-[10rem] relative">

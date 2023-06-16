@@ -47,9 +47,10 @@ function About() {
     
     return (
         <motion.div
-        initial={{opacity: .7}}
+        initial={{opacity: 0}}
         animate={{opacity: 1}}
-        exit={{opacity: 0}}
+        exit={{opacity: .01}}
+        transition={{ duration: 0.5 }}
          className="w-full h-fit bg-thirdarylol flex flex-col items-center">
             <div className="w-full h-fit  pt-[10rem] lg:pt-[4rem] flex flex-col items-center">
                 <h1 className=" text-4xl md:text-[2.4rem] lg:text-[3.2rem] leading-[2.6rem] lg:leading-[4rem] w-[80%] md-w-[75%] lg:w-[50%] text-center small">

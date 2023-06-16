@@ -58,9 +58,10 @@ const Gallery = () => {
   };
   return (
     <motion.div 
-      initial={{opacity: .7}}
-      animate={{opacity: 1}}
-      exit={{opacity: 0}}
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: .01}}
+    transition={{ duration: 0.5 }}
     className='w-full h-fit mb-[4rem] pt-[12rem] lg:pt-[6rem] flex flex-col items-center bg-thirdarylol'>
       <h1 className='text-4xl border-[3px] border-primary w-fit h-fit p-[.8rem] medium'>Projects Gallery</h1>
       <p className="w-[90%] text-[1.4rem] text-center mt-[2rem] leading-[2.5rem] indent-[.5rem] small"> 
