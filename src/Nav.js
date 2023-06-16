@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Hamburger from 'hamburger-react'
+import { Turn as Hamburger } from 'hamburger-react'
 
 function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -38,12 +38,7 @@ function NavBar() {
         
         setMenuOpen(!menuOpen);
     }
-    const ToggleIcon = () => {
-        const [isOpen, setOpen] = useState(false)
-        return (
-            <Hamburger toggled={isOpen} toggle={setOpen} onClick={toggleMenu}/>
-        );
-      };
+   
     
     const DropServices = () => {
         const [dropOpen, setDropOpen] = useState(0);
@@ -134,12 +129,14 @@ function NavBar() {
     return (
         <nav className='w-full overflow-hidden lg:overflow-visible fixed lg:relative z-[9998]'>
             <div class="nav-header flex h-28 lg:h-24 w-full bg-primary border-b border-thirdarylol lg:border-b-[1px]">
-                <div className='w-full lg:w-[35%] h-full flex lg:ml-[2rem]'>
-                    <Link className='justify-self-start ml-[.5rem]' onClick={handleClick} to="/"><img className='h-full w-[6rem]' src='image0.webp' alt="fix later"></img></Link>
-                    <h1 className=' w-fit self-center text-center lg:text-start lg:pl-[2rem] flex-1 text-2xl md:text-3xl  tracking-widest curly'>SoCalTubSpecialist</h1>
-                     <ToggleIcon/>
+                <div className='w-full lg:w-[35%] h-full flex items-center lg:ml-[2rem]'>
+                    <Link className='flex-[20%] justify-self-start ml-[.5rem]' onClick={handleClick} to="/"><img className='h-full w-[6rem]' src='image0.webp' alt="fix later"></img></Link>
+                    <h1 className='flex-[80%] w-fit self-center text-center lg:text-start lg:pl-[2rem] text-2xl md:text-3xl  tracking-widest curly'>SoCalTubSpecialist</h1>
                 </div>
                 <div className='w-1/5 lg:w-[65%] md:w-[auto] h-full flex justify-end lg:justify-center items-center mr-[1rem] lg:mr-[0]'>
+                    <div className='border-[2px] border-secondary'>
+                        <Hamburger toggled={menuOpen} toggle={toggleMenu} color='#FAF9F6' size={28} className=" w-[4rem] h-[4rem]"/>
+                    </div>
                     <ul className='w-[80%] h-full flex-row items-center hidden lg:flex small'>
                         <li className='w-full text-center text-2xl hover:text-thirdarylol transition-colors duration-200'>
                             <Link onClick={handleClick} to="/">Home</Link>

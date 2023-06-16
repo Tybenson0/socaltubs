@@ -166,40 +166,55 @@ html, body {
   @keyframes navOpen {
     0% {
         right: 100%;
+        height: 0;
+        opacity: 0;
     }
     25% {
         right: 75%;
+        height: 0;
+        opacity: 0;
     }
     50% {
         right: 50%;
+        height: 0;
+        opacity: 1;
     }
     75% {
         right: 25%;
+        height: 0;
+        opacity: 1;
     }
     100% {
         right: 0%;
+        height: 100%;
+        opacity: 1;
     }
   }
   @keyframes navClose {
     0% {
         height: 85vh;
         right: 0%;
+        opacity: 1;
     }
     25% {
         height: 85vh;
         right: 25%;
+        opacity: 1;
     }
     50% {
         height: 85vh;
         right: 50%;
+        opacity: 0;
     }
     75% {
         height: 85vh;
         right: 75%;
+        opacity: 0;
     }
     100% {
         height: 0;
         right: 100%;
+        opacity: 0;
     }
   }
   @keyframes dropNav {
