@@ -30,15 +30,33 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <form name="contact" data-netlify="true" style="display: none">
+      <input
+        type="text"
+        name="firstname"
+        className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 max-h-[5rem] light"
+      />
+      <input
+        type="text"
+        name="lastname"
+        className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 max-h-[5rem] light"
+      />
+      <input
+        type="email"
+        name="email"
+        className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2 max-h-[5rem] light"
+      />
+      <input
+        type="tel"
+        name="phonenumber"
+        className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2 max-h-[5rem] light"
+      />
+      <textarea
+        cols="10"
+        rows="5"
+        name="textarea"
+        className="border border-gray-500 px-4 py-2 focus:outline-none focus:border-purple-500 col-span-2 light"
+      ></textarea>
+    </form>
   </body>
 </html>

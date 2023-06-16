@@ -20,8 +20,7 @@ function Contact() {
                 
                 {/*<form className="w-[95%] h-[45vh] md:h-[40vh] lg:h-[60vh] flex flex-col items-center" name="contact" method="POST" data-netlify="true" >*/}
                 <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact" />
-                    <div className="grid grid-cols-2 gap-5 flex-[90%]">
+                    <input type="hidden" name="form-name" value="contact" />
                     <input
                     type="text"
                     name="firstname"
@@ -57,7 +56,6 @@ function Contact() {
                     placeholder="Write your message..."
                     required
                     ></textarea>
-                    </div>
                     <input
                     type="submit"
                     value="Send Message"
