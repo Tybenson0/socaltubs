@@ -50,6 +50,7 @@ function NavBar() {
             style={{ cursor: 'pointer' }}
             onClick={toggleMenu}
           >
+            <path d="M256 120.768L306.432 64 768 512l-461.568 448L256 903.232 659.072 512z" fill="#84D3F3" />
             <path className="path-open" />
             <path className="path-close" />
           </svg>
