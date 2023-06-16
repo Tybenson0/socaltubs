@@ -43,9 +43,9 @@ function NavBar() {
             className={`hb   ${menuOpen ? 'animate-open' : 'animate-close'} `}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 10 10"
-            stroke="#eee"
+            stroke="#00000"
             strokeWidth=".6"
-            fill="rgba(0,0,0,0)"
+            fill="#00000"
             strokeLinecap="round"
             style={{ cursor: 'pointer' }}
             onClick={toggleMenu}
@@ -149,6 +149,7 @@ function NavBar() {
                     <Link className='justify-self-start ml-[.5rem]' onClick={handleClick} to="/"><img className='h-full w-[6rem]' src='image0.webp' alt="fix later"></img></Link>
                     <h1 className=' w-fit self-center text-center lg:text-start lg:pl-[2rem] flex-1 text-2xl md:text-3xl  tracking-widest curly'>SoCalTubSpecialist</h1>
                 </div>
+                <ToggleIcon/>
                 <div className='w-1/5 lg:w-[65%] md:w-[auto] h-full flex justify-end lg:justify-center items-center mr-[1rem] lg:mr-[0]'>
                     <ul className='w-[80%] h-full flex-row items-center hidden lg:flex small'>
                         <li className='w-full text-center text-2xl hover:text-thirdarylol transition-colors duration-200'>
@@ -167,7 +168,7 @@ function NavBar() {
                         </li>
                     </ul>
                 </div>
-                   <ToggleIcon/>
+                  
             </div>
             <div  className={`h-[85vh] lg:hidden relative  bg-thirdarylol w-full nav-collapse flex justify-center border-b-2 border-b-primary ${menuOpen ? 'open' : 'close'}`}> 
                 <ul className='list-none w-full flex flex-col items-center justify-center text-5xl font-header-font'>
