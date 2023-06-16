@@ -155,7 +155,7 @@ function NavBar() {
                     </ul>
                 </div>
             </div>
-            <div  className={`h-[85vh] lg:hidden relative  bg-thirdarylol w-full nav-collapse flex justify-center border-b-2 border-b-primary ${menuOpen ? 'open' : 'close'}`}> 
+            <div  className={`h-[85vh] lg:hidden relative  bg-thirdarylol w-full nav-collapse flex justify-center lg:border-b-2 lg:border-b-primary ${menuOpen ? 'open' : 'close'}`}> 
                 <ul className={`'list-none w-full flex flex-col items-center justify-center text-5xl font-header-font' ${menuOpen ? 'opac' : 'opac-close'}`}>
                     <li className='w-full text-center pb-10 md:pb-10 small text-[2.2rem] '>
                          <Link onClick={handleClick} to="/">Home</Link>
