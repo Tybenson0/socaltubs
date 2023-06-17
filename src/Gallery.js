@@ -97,7 +97,7 @@ const Gallery = () => {
         <GridItem image={imagesKitchen[7]} />
         </div>
       <div className="w-[95%] md:w-[85%] lg:w-[70%] h-fit mt-[4rem] grid grid-cols-2 lg:grid-cols-3 col-reverse grid-rows-6 gap-[1.5rem] bg-thirdarylol">
-        <h2 className='w-[90%] max-h-fit text-[2.4rem] tracking-widest flex justify-center items-center text-center border-l-primary border-l-[2px] border-t-primary border-t-[2px] small'>Fiber Glass</h2>
+        <h2 className='w-[90%] max-h-fit text-[2.4rem] tracking-widest flex justify-center items-center text-center border-l-primary border-l-[2px] border-t-primary border-t-[2px] small pl-[5px]'>Fiber Glass</h2>
         <GridItem image={imagesGlass[0]} />
         <GridItem image={imagesGlass[1]} />
         <GridItem image={imagesGlass[2]} />
