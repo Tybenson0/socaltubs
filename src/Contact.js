@@ -37,7 +37,7 @@ function Contact() {
             )}
                 
                 
-                <form data-netlify-honeypot="bot-field" name="contact" method="POST" data-netlify="true" netlify="no-success-page" className="grid grid-cols-2 grid-rows-6 h-full w-[95%] md:h-[40vh] lg:h-[60vh]">
+                <form data-netlify-honeypot="bot-field" name="contact" method="POST" data-netlify="true" netlify="no-success-page" action='.' className="grid grid-cols-2 grid-rows-6 h-full w-[95%] md:h-[40vh] lg:h-[60vh]">
                     <input type="hidden" name="form-name" value="contact" />
                     <input
                     type="text"
