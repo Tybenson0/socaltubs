@@ -59,10 +59,9 @@ html {
         font-family: poppins;
     }
     .home {
-        background-image: url(/public/homeimage.webp);
+        background-image: url(/public/gallery/g-3.webp);
         background-size: 100% 110vh;
         background-attachment: fixed;
-        background-position: center;
     }
 }
 p {
