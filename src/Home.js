@@ -10,7 +10,7 @@ function Home() {
         exit={{opacity: .01}}
         transition={{ duration: 0.5 }}
         >
-        <div className="home relative w-full h-[88vh] lg:h-[110vh] bg-fixed  bg-center bg-hero-pattern flex justify-center lg:justify-end items-center z-10">
+        <div className="home relative w-full h-[88vh] lg:h-[110vh] flex justify-center lg:justify-end items-center z-10">
             <div className="w-[70%] lg:w-[36%] h-[70%] max-h-[400px] lg:max-h-fit lg:mr-[5%] border-2 border-thirdarylol mt-[10rem] relative">
                 <div className="w-full h-full relative">
                     <div className="w-full h-full bg-primary opacity-80 absolute "></div>

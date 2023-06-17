@@ -14,7 +14,7 @@ module.exports = {
       test3: '#FFC0CB',
     },
     backgroundImage: {
-      'hero-pattern': "url('/public/image.jpeg')",
+      'hero-pattern': "url('/public/home.webp')",
       'city-pattern': "url('/public/scv.jpg')",
       'porcelain-pattern': "url('/public/scv.jpg')",
     },
