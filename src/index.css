@@ -3,10 +3,11 @@
 @import "tailwindcss/utilities";
 .home {
     background-image: url(/public/homeimage.webp);
-    background-size: contain;
+    background-size: 100% 100vh;
     background-attachment: fixed;
     background-position: center;
 }
+
 
 a {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -57,6 +58,12 @@ html {
     h2, h3 {
         font-family: poppins;
     }
+    .home {
+        background-image: url(/public/homeimage.webp);
+        background-size: 100% 110vh;
+        background-attachment: fixed;
+        background-position: center;
+    }
 }
 p {
     font-family: Poppins;
@@ -78,7 +85,7 @@ html, body {
     display: flex;
     width: 100%;
     right: 0;
-    animation: navOpen .1s ease-in-out;
+    animation: navOpen .2s ease-in-out;
 }
 .close {
     right: 100%;
