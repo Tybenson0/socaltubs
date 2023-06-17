@@ -12,6 +12,7 @@ function Home() {
         >
         <div className="home relative w-[100vw] h-[88vh] lg:h-[110vh] flex justify-center lg:justify-end items-center z-10">
             <div className="w-[70%] lg:w-[36%] h-[70%] max-h-[400px] lg:max-h-fit lg:mr-[5%] border-2 border-thirdarylol mt-[10rem] relative">
+            <div className='home absolute w-full h-full'></div>
                 <div className="w-full h-full relative">
                     <div className="w-full h-full bg-primary opacity-80 absolute "></div>
                     <div className="w-full h-full relative flex justify-center items-center flex-col p-6 gap-6">
